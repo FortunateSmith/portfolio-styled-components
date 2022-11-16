@@ -4,7 +4,9 @@ export const homeObjOne = {
   lightTopLine: true,
   topLine: "Web Developer",
   lightText: true,
-  lightTextDesc: true,
-  headline: "Stuff",
-  subtitle: "Sub-Stuff"
+  lightTextDesc: false,
+  headline: "Liam Smith",
+  description: "Helping communities connect and collaborate.",
+  primary: true,
+  buttonLabel: "Contact"
 }

@@ -44,7 +44,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.div`
   color: ${({lightTopLine}) => (lightTopLine ? "#abf6e8" : "#101522")};
-  background-color: black;
+  /* background-color: black; */
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
@@ -62,6 +62,6 @@ export const SubTitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({lightText}) => (lightText ? "#abf6e8" : "#101522")}
+  color: ${({lightText}) => (lightText ? "#abf6e8" : "#aed6d1")}
 `
 
