@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoSec = styled.div`
-color: #fff;
+color: #ffffff;
 padding: 160px 0;
 background: ${({lightBg}) => (lightBg ? "#abf6e8" : "#101522")}
 `;
@@ -41,3 +41,27 @@ export const TextWrapper = styled.div`
     padding-bottom: 65px;
   }
 `;
+
+export const TopLine = styled.div`
+  color: ${({lightTopLine}) => (lightTopLine ? "#abf6e8" : "#101522")};
+  background-color: black;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-bottom: 16px;
+`
+export const Heading = styled.h1`
+margin-bottom: 24px;
+font-size: 48px;
+line-height: 1.1;
+color: ${({lightText}) => (lightText ? "#abf6e8" : "#101522")}`
+
+export const SubTitle = styled.p`
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${({lightText}) => (lightText ? "#abf6e8" : "#101522")}
+`
+
