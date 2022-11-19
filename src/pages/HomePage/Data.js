@@ -8,5 +8,8 @@ export const homeObjOne = {
   headline: "Liam Smith",
   description: "Helping communities connect and collaborate.",
   primary: true,
-  buttonLabel: "Contact"
+  buttonLabel: "Contact",
+  img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
+  start: "",
+  alt: "Image"
 }
