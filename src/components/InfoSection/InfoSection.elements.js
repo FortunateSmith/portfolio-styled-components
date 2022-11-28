@@ -62,13 +62,13 @@ export const SubTitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({lightText}) => (lightText ? "#abf6e8" : "#aed6d1")}
+  color: ${({lightText}) => (lightText ? "#abf6e8" : "#101522")}
 `
 
 export const ImageWrapper = styled.div`
   max-width: 555px;
   display: flex;
-  justify-content: ${({start}) => (start ? "flex-start" : "flex-end") }
+  justify-content: ${({start}) => (start ? "flex-start" : "flex-end") };
 `
 
 export const Img = styled.img`

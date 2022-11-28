@@ -27,6 +27,7 @@ const InfoSection = ({
   start,
   img,
   alt,
+  viewButton
 }) => {
   return (
     <>
@@ -38,9 +39,9 @@ const InfoSection = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
-                <Link to="/contact">
-                  <Button big fontBig primary={primary}>{buttonLabel}</Button>
-                </Link>
+                
+             {viewButton ?  <Link to="/contact"> <Button big fontBig primary={primary}>{buttonLabel}</Button> </Link> : null}
+              
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
