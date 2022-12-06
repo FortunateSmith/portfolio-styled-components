@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Button } from "../../globalStyles";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import {
   InfoSec,
   InfoColumn,

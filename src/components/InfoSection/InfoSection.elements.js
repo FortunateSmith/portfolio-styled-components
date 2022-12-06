@@ -63,7 +63,7 @@ export const SubTitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightText }) => (lightText ? "#abf6e8" : "#101522")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#abf6e8" : "#101522")};
 `;
 
 export const ImageWrapper = styled.div`
