@@ -43,7 +43,7 @@ const Navbar = () => {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              <NavIcon />
+              <NavIcon src="../../images/Community-garden-icon.svg"/>
               Liam Smith
             </NavLogo>
             <MobileIcon onClick={handleClick}>

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const InfoSec = styled.div`
-color: #ffffff;
-padding: 160px 0;
-background: ${({lightBg}) => (lightBg ? "#abf6e8" : "#101522")}
+  color: #ffffff;
+  padding: 160px 0;
+  background: ${({ lightBg }) => (lightBg ? "#abf6e8" : "#101522")};
 `;
 
 export const InfoRow = styled.div`
@@ -12,7 +12,7 @@ export const InfoRow = styled.div`
   flex-wrap: wrap;
   align-items: center;
   /* flips which side image is on */
-  flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
+  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
 `;
 
 export const InfoColumn = styled.div`
@@ -30,7 +30,7 @@ export const InfoColumn = styled.div`
     display: flex;
     justify-content: center;
   }
-`; 
+`;
 
 export const TextWrapper = styled.div`
   max-width: 540px;
@@ -43,33 +43,34 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({lightTopLine}) => (lightTopLine ? "#abf6e8" : "#101522")};
+  color: ${({ lightTopLine }) => (lightTopLine ? "#abf6e8" : "#101522")};
   /* background-color: black; */
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
-`
+`;
 export const Heading = styled.h1`
-margin-bottom: 24px;
-font-size: 48px;
-line-height: 1.1;
-color: ${({lightText}) => (lightText ? "#abf6e8" : "#101522")}`
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  color: ${({ lightText }) => (lightText ? "#abf6e8" : "#101522")};
+`;
 
 export const SubTitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({lightText}) => (lightText ? "#abf6e8" : "#101522")}
-`
+  color: ${({ lightText }) => (lightText ? "#abf6e8" : "#101522")};
+`;
 
 export const ImageWrapper = styled.div`
   max-width: 555px;
   display: flex;
-  justify-content: ${({start}) => (start ? "flex-start" : "flex-end") };
-`
+  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
+`;
 
 export const Img = styled.img`
   padding-right: 0;
@@ -78,6 +79,12 @@ export const Img = styled.img`
   vertical-align: middle;
   display: inline-block;
   max-height: 500px;
-  
-`
+`;
+export const Anchor = styled.a`
+  text-decoration: none;
+  color: ${({ primary }) => (primary ? "#abf6e8" : "#101522")};
 
+  &:hover {
+    color: ${({ primary }) => (primary ? "#101522" : "#abf6e8")};
+  }
+`;

@@ -10,7 +10,8 @@ import {
   Heading,
   SubTitle,
   ImageWrapper,
-  Img
+  Img,
+  Anchor,
 } from "./InfoSection.elements";
 
 const InfoSection = ({
@@ -27,7 +28,7 @@ const InfoSection = ({
   start,
   img,
   alt,
-  viewButton
+  viewButton,
 }) => {
   return (
     <>
@@ -39,14 +40,19 @@ const InfoSection = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
-                
-             {viewButton ?  <Link to="/contact"> <Button big fontBig primary={primary}>{buttonLabel}</Button> </Link> : null}
-              
+
+                {viewButton ? (
+                  <Anchor href="https://resume.creddle.io/resume/axbddmzuru6">
+                    <Button big fontBig primary={primary}>
+                      {buttonLabel}
+                    </Button>
+                  </Anchor>
+                ) : null}
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
               <ImageWrapper start={start}>
-                <Img src={img} alt={alt}/>
+                <Img src={img} alt={alt} />
               </ImageWrapper>
             </InfoColumn>
           </InfoRow>
