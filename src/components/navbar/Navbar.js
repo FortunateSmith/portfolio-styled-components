@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import { Button } from "../../globalStyles"
+import { Button } from "../../globalStyles";
+import Logo from "../../images/Logo.png"
 import {
   Nav,
   NavbarContainer,
@@ -43,8 +44,7 @@ const Navbar = () => {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              <NavIcon src="../../images/Community-garden-icon.svg"/>
-              Liam Smith
+              <NavIcon src={Logo}/>
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

@@ -28,22 +28,22 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? "#000" : "#abf6e8")};
+  background: ${({ primary }) => (primary ? "#000" : "#f6effc")};
 
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-  color: ${({ primary }) => (primary ? "#abf6e8" : "#101522")};
+  color: ${({ primary }) => (primary ? "#f6effc": "#1a1022")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
-  outline: solid 2px ${({ primary }) => (primary ? "#abf6e8" : "#101522")};
+  outline: solid 2px ${({ primary }) => (primary ? "#f6effc": "#1a1022")};
   border: none;
   cursor: pointer;
 
   &:hover {
     transition: all 0.1s ease-out;
     /* background: #fff; */
-    background: ${({ primary }) => (primary ? "#abf6e8" : "#101522")};
-    color: ${({ primary }) => (primary ? "#101522" : "#abf6e8")};
-    outline: solid 2px ${({ primary }) => (primary ? "#101522" : "#abf6e8")};
+    background: ${({ primary }) => (primary ? "#f6effc": "#1a1022")};
+    color: ${({ primary }) => (primary ? "#101522" : "#f6effc")};
+    outline: solid 2px ${({ primary }) => (primary ? "#101522" : "#f6effc")};
   }
 
   @media screen and (max-width: 960px) {

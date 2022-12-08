@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const InfoSec = styled.div`
-  color: #ffffff;
+  color: "#f6effc";
   padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? "#abf6e8" : "#101522")};
+  background: ${({ lightBg }) => (lightBg ? "#f6effc": "#1a1022")};
 `;
 
 export const InfoRow = styled.div`
@@ -43,7 +43,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#abf6e8" : "#101522")};
+  color: ${({ lightTopLine }) => (lightTopLine ? "#f6effc": "#1a1022")};
   /* background-color: black; */
   font-size: 18px;
   line-height: 16px;
@@ -55,7 +55,7 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? "#abf6e8" : "#101522")};
+  color: ${({ lightText }) => (lightText ? "#f6effc": "#1a1022")};
 `;
 
 export const SubTitle = styled.p`
@@ -63,7 +63,7 @@ export const SubTitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#abf6e8" : "#101522")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#f6effc": "#1a1022")};
 `;
 
 export const ImageWrapper = styled.div`
@@ -82,9 +82,9 @@ export const Img = styled.img`
 `;
 export const Anchor = styled.a`
   text-decoration: none;
-  color: ${({ primary }) => (primary ? "#abf6e8" : "#101522")};
+  color: ${({ primary }) => (primary ? "#f6effc": "#1a1022")};
 
   &:hover {
-    color: ${({ primary }) => (primary ? "#101522" : "#abf6e8")};
+    color: ${({ primary }) => (primary ? "#101522" : "#f6effc")};
   }
 `;

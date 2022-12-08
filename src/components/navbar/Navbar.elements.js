@@ -24,7 +24,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  color: #f6effc;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -35,6 +35,9 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled.img`
   margin-right: 0.5rem;
+  width: 120px;
+  height: 90%;
+  background: transparent;
 `;
 
 export const MobileIcon = styled.div`
@@ -76,8 +79,9 @@ export const NavItem = styled.li`
   height: 80px;
   border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 2px solid #101522;
-    background-color: #ef7346;
+    /* border-bottom: 4px solid #101522; */
+    /* border-top: 4px solid #101522; */
+    background-color: #f6effc;
     color: #101522;
   }
 
