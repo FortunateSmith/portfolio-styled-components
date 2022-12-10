@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoSec = styled.div`
   color: "#f6effc";
   padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? "#f6effc": "#1a1022")};
+  background: ${({ lightBg }) => (lightBg ? "#f6effc" : "#1a1022")};
 `;
 
 export const InfoRow = styled.div`
@@ -39,31 +39,49 @@ export const TextWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#f6effc": "#1a1022")};
+  color: ${({ lightTopLine }) => (lightTopLine ? "#f6effc" : "#1a1022")};
   /* background-color: black; */
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 768px){
+    font-size: 32px;
+  }
 `;
 export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? "#f6effc": "#1a1022")};
+  color: ${({ lightText }) => (lightText ? "#f6effc" : "#1a1022")};
+  @media screen and (max-width: 768px) {
+   font-size: 64px; 
+  }
 `;
 
 export const SubTitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
+  /* border: solid 2px;
+  border-radius: 5%; */
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#f6effc": "#1a1022")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#f6effc" : "#1a1022")};
+
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+    
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -78,11 +96,97 @@ export const Img = styled.img`
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
-  max-height: 500px;
+  /* max-height: 500px; */
 `;
+
+export const CircleWrapper = styled.div`
+  width: 301px;
+  height: 301px;
+  border-radius: 51%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items: */
+  /* margin: 50px; */
+  /* padding-left:15%; */
+`;
+// export const Circle = styled.div`
+//   display: block;
+//   position: absolute;
+//   top: 51%;
+//   left: 51%;
+//   width: 100px;
+//   height: 100px;
+//   margin: -51px;
+//   background: red;
+//   border-radius: 51%;
+//   text-align: center;
+//   line-height: 100px;
+// `;
+export const Deg0 = styled.img`
+  transform: translate(151px);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  /* filter: invert(100%); */
+`;
+
+export const Deg60 = styled.img`
+  transform: rotate(61deg) translate(151px) rotate(-61deg);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  filter: invert(100%);
+`;
+export const Deg120 = styled.img`
+  transform: rotate(121deg) translate(151px) rotate(-121deg);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  /* filter: invert(100%); */
+// `;
+// export const Deg135 = styled.img`
+//   transform: rotate(136deg) translate(151px) rotate(-136deg);
+//   width: 80px;
+//   height: 80px;
+//   position: absolute;
+//   /* filter: invert(100%); */
+// `;
+
+ export const Deg180 = styled.img`
+   transform: rotate(181deg) translate(151px) rotate(-181deg);
+   width: 80px;
+   height: 80px;
+   position: absolute;
+ `;
+
+ export const Deg240 = styled.img`
+   transform: rotate(241deg) translate(151px) rotate(-241deg);
+   width: 80px;
+   height: 80px;
+   position: absolute;
+ `;
+
+ export const Deg300 = styled.img`
+   transform: rotate(301deg) translate(151px) rotate(-301deg);
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   filter: invert(100%);
+ `;
+
+// export const Deg315 = styled.img`
+//   transform: rotate(316deg) translate(151px) rotate(-316deg);
+//   width: 80px;
+//   height: 80px;
+//   position: absolute;
+//   filter: invert(100%);
+// `;
+
 export const Anchor = styled.a`
   text-decoration: none;
-  color: ${({ primary }) => (primary ? "#f6effc": "#1a1022")};
+  color: ${({ primary }) => (primary ? "#f6effc" : "#1a1022")};
 
   &:hover {
     color: ${({ primary }) => (primary ? "#101522" : "#f6effc")};

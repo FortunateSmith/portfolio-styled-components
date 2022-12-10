@@ -68,7 +68,7 @@ export const NavMenu = styled.ul`
     position: absolute;
     top: 80px;
     /* click is false, NavMenu hidden -- click is true, slides from left */
-    right: ${({ click }) => (click ? 0 : "-100%")};
+    left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #101522;

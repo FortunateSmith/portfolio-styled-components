@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Button } from "../../globalStyles";
 // import { Link } from "react-router-dom";
+// import ReactImg from "../../images/techLogos/React.png"
+
 import {
   InfoSec,
   InfoColumn,
@@ -12,6 +14,14 @@ import {
   ImageWrapper,
   Img,
   Anchor,
+  CircleWrapper,
+  // Circle,
+  Deg0,
+  Deg60,
+  Deg120,
+  Deg180,
+  Deg240,
+  Deg300
 } from "./InfoSection.elements";
 
 const InfoSection = ({
@@ -29,6 +39,13 @@ const InfoSection = ({
   img,
   alt,
   viewButton,
+  circle,
+  img0,
+  img60,
+  img120,
+  img180,
+  img240,
+  img300
 }) => {
   return (
     <>
@@ -51,9 +68,22 @@ const InfoSection = ({
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
-              <ImageWrapper start={start}>
-                <Img src={img} alt={alt} />
-              </ImageWrapper>
+              {circle ? (
+                <CircleWrapper start={start}>
+                  {/* <Circle> */}
+                    <Deg0 src={img0} />
+                    <Deg60 src={img60} />
+                    <Deg120 src={img120} />
+                    <Deg180 src={img180} />
+                    <Deg240 src={img240} />
+                    <Deg300 src={img300} />
+                  {/* </Circle> */}
+                </CircleWrapper>
+              ) : (
+                <ImageWrapper start={start}>
+                  <Img src={img} alt={alt} />
+                </ImageWrapper>
+              )}
             </InfoColumn>
           </InfoRow>
         </Container>

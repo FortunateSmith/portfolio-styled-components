@@ -47,7 +47,9 @@ export const Button = styled.button`
   }
 
   @media screen and (max-width: 960px) {
-    width: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
   }
 `;
 

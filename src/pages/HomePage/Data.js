@@ -24,12 +24,19 @@ export const homeObjTwo = {
   lightText: true,
   lightTextDesc: true,
   headline: "Front End",
-  description: "Reactjs, HTML, CSS3, EJS, SASS, Bootstrap, Gatsby",
+  description: "Frontend frameworks and languages I work with includes: ReactJS, HTML, CSS3, EJS, SASS, Bootstrap, jQuery and Gatsby",
   buttonLabel: "Contact",
   img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
   start: "",
   alt: "Image",
   viewButton: false,
+  circle: true,
+  img0: require("../../images/techLogos/React.png"),
+  img60: require("../../images/techLogos/NewHTML5.png"),
+  img120: require("../../images/techLogos/Sass.png"),
+  img180: require("../../images/techLogos/Gatsby_Monogram.png"),
+  img240: require("../../images/techLogos/bootstrap-logo.png"),
+  img300: require("../../images/techLogos/jquery.png")
 };
 
 export const homeObjThree = {
@@ -41,7 +48,7 @@ export const homeObjThree = {
   lightText: false,
   lightTextDesc: false,
   headline: "BackEnd",
-  description: "NodeJS, Axiox, Ajax, Express, Rails",
+  description: "Backend tech knowledge includes: NodeJS, Axios, Ajax, Express, Rails",
   buttonLabel: "",
   img: "",
   start: "",
@@ -57,7 +64,6 @@ export const homeObjFour = {
   lightText: true,
   lightTextDesc: true,
   headline: "About Liam",
-  // description: "Reactjs, HTML, CSS, EJS, SASS",
   buttonLabel: "",
   img: "",
   start: "",
