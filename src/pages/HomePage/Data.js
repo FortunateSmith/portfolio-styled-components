@@ -31,12 +31,12 @@ export const homeObjTwo = {
   alt: "Image",
   viewButton: false,
   circle: true,
-  img0: require("../../images/techLogos/React.png"),
-  img60: require("../../images/techLogos/NewHTML5.png"),
-  img120: require("../../images/techLogos/Sass.png"),
-  img180: require("../../images/techLogos/Gatsby_Monogram.png"),
-  img240: require("../../images/techLogos/bootstrap-logo.png"),
-  img300: require("../../images/techLogos/jquery.png")
+  img0: require("../../images/techLogos/frontend/React.png"),
+  img60: require("../../images/techLogos/frontend/NewHTML5.png"),
+  img120: require("../../images/techLogos/frontend/Sass.png"),
+  img180: require("../../images/techLogos/frontend/Gatsby_Monogram.png"),
+  img240: require("../../images/techLogos/frontend/bootstrap-logo.png"),
+  img300: require("../../images/techLogos/frontend/jquery.png")
 };
 
 export const homeObjThree = {
@@ -48,12 +48,19 @@ export const homeObjThree = {
   lightText: false,
   lightTextDesc: false,
   headline: "BackEnd",
-  description: "Backend tech knowledge includes: NodeJS, Axios, Ajax, Express, Rails",
+  description: "Manage requests, responses and data with the right backend for your project.",
   buttonLabel: "",
   img: "",
   start: "",
   alt: "Image",
   viewButton: false,
+  circle: true,
+  img0: require("../../images/techLogos/backend/JavaScript.png"),
+  img60: require("../../images/techLogos/backend/NodeJS.png"),
+  img120: require("../../images/techLogos/frontend/Sass.png"),
+  img180: require("../../images/techLogos/frontend/Gatsby_Monogram.png"),
+  img240: require("../../images/techLogos/frontend/bootstrap-logo.png"),
+  img300: require("../../images/techLogos/frontend/jquery.png")
 };
 export const homeObjFour = {
   lightBg: false,

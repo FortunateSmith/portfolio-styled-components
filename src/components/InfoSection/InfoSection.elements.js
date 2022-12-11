@@ -137,7 +137,7 @@ export const Deg60 = styled.img`
   width: 80px;
   height: 80px;
   position: absolute;
-  filter: invert(100%);
+  ${({ lightBg }) => lightBg && `filter : invert(100%)`};
 `;
 export const Deg120 = styled.img`
   transform: rotate(121deg) translate(151px) rotate(-121deg);

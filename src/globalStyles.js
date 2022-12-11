@@ -8,6 +8,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-style: italic;
   }
 `;
 
