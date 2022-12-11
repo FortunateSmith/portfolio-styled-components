@@ -24,7 +24,7 @@ export const homeObjTwo = {
   lightText: true,
   lightTextDesc: true,
   headline: "Front End",
-  description: "Frontend frameworks and languages I work with includes: ReactJS, HTML, CSS3, EJS, SASS, Bootstrap, jQuery and Gatsby",
+  description: "Connect with users through well designed frontend.",
   buttonLabel: "Contact",
   img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
   start: "",
