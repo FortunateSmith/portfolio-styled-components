@@ -1,5 +1,5 @@
 import React from "react";
-import { InfoSection } from "../../components";
+import { InfoSection, Navbar } from "../../components";
 import {
   homeObjOne,
   homeObjTwo,
@@ -11,6 +11,7 @@ import {
 const Home = () => {
   return (
     <>
+      <Navbar/>
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />

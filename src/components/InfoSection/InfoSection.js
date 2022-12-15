@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Button } from "../../globalStyles";
 // import { Link } from "react-router-dom";
 // import ReactImg from "../../images/techLogos/React.png"
-import { Roll } from require("react-reveal");
+import { Roll, Zoom } from "react-reveal";
 
 import {
   InfoSec,
@@ -22,7 +22,7 @@ import {
   Deg120,
   Deg180,
   Deg240,
-  Deg300
+  Deg300,
 } from "./InfoSection.elements";
 
 const InfoSection = ({
@@ -39,6 +39,7 @@ const InfoSection = ({
   start,
   img,
   alt,
+  id,
   viewButton,
   circle,
   img0,
@@ -46,12 +47,13 @@ const InfoSection = ({
   img120,
   img180,
   img240,
-  img300
+  img300,
 }) => {
+
   return (
     <>
-      <InfoSec lightBg={lightBg}>
-        <Container>
+      <InfoSec lightBg={lightBg} >
+        <Container id={id}>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
               <TextWrapper>
@@ -72,19 +74,21 @@ const InfoSection = ({
               {circle ? (
                 <CircleWrapper start={start}>
                   <Roll right>
-                  {/* <Circle> */}
+                    {/* <Circle> */}
                     <Deg0 src={img0} />
                     <Deg60 src={img60} />
                     <Deg120 src={img120} />
                     <Deg180 src={img180} />
                     <Deg240 src={img240} />
                     <Deg300 src={img300} />
-                  {/* </Circle> */}
-                </Roll>
+                    {/* </Circle> */}
+                  </Roll>
                 </CircleWrapper>
               ) : (
                 <ImageWrapper start={start}>
-                  <Img src={img} alt={alt} />
+                  <Zoom>
+                    <Img src={img} alt={alt} />
+                  </Zoom>
                 </ImageWrapper>
               )}
             </InfoColumn>

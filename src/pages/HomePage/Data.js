@@ -1,4 +1,5 @@
 export const homeObjOne = {
+  id: "home",
   lightBg: true,
   primary: false,
   imgStart: "",
@@ -16,6 +17,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
+  id: "frontend",
   lightBg: false,
   primary: true,
   imgStart: "start",
@@ -23,8 +25,8 @@ export const homeObjTwo = {
   topLine: "",
   lightText: true,
   lightTextDesc: true,
-  headline: "Front End",
-  description: "Connect with users through well designed frontend.",
+  headline: "FrontEnd",
+  description: "Engage with users through well designed frontend.",
   buttonLabel: "Contact",
   img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
   start: "",
@@ -40,6 +42,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
+  id: "backend",
   lightBg: true,
   primary: false,
   imgStart: "",
@@ -63,6 +66,7 @@ export const homeObjThree = {
   img300: require("../../images/techLogos/frontend/jquery.png")
 };
 export const homeObjFour = {
+  id: "about",
   lightBg: false,
   primary: true,
   imgStart: "start",
@@ -79,6 +83,7 @@ export const homeObjFour = {
 };
 
 export const homeObjFive = {
+  id: "projects",
   lightBg: true,
   primary: false,
   imgStart: "",

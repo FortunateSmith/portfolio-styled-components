@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Container } from "../../globalStyles";
 // import { FaMagento } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkRouter } from "react-router-dom"
 
 export const Nav = styled.nav`
   background: #101522;
@@ -23,7 +24,7 @@ export const NavbarContainer = styled(Container)`
   ${Container}
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled(LinkRouter)`
   color: #f6effc;
   justify-self: flex-start;
   cursor: pointer;
@@ -51,6 +52,12 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+
+    /* &:hover {
+      transform: rotate(90deg);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100%  0%;
+    } */
   }
 `;
 
@@ -94,7 +101,7 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(LinkScroll)`
   color: white;
   display: flex;
   align-items: center;
@@ -130,7 +137,7 @@ export const NavItemBtn = styled.li`
 }
 `
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled(LinkScroll)`
   display: flex;
   justify-content: center;
   align-items: center;

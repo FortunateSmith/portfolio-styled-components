@@ -19,7 +19,7 @@ export const InfoColumn = styled.div`
   margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
-  /* flex grow, flex shrink, flex basis, */
+  /* flex = flex grow, flex shrink, flex basis as one single property */
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;
@@ -57,6 +57,10 @@ export const TopLine = styled.div`
 
   @media screen and (max-width: 768px){
     font-size: 32px;
+  }
+
+  @media screen and (max-width: 300px){
+    font-size: 24px;
   }
 `;
 export const Heading = styled.h1`
@@ -110,6 +114,18 @@ export const CircleWrapper = styled.div`
   /* align-items: */
   /* margin: 50px; */
   /* padding-left:15%; */
+
+  @media screen and (max-width: 768px){
+    width: 201px;
+    height: 201px;
+    padding-right: 20%;
+  }
+
+  @media screen and (max-width: 300px){
+    width: 201px;
+    height: 201px;
+    padding-right: 30%;
+  }
 `;
 // export const Circle = styled.div`
 //   display: block;
@@ -130,6 +146,12 @@ export const Deg0 = styled.img`
   height: 80px;
   position: absolute;
   /* filter: invert(100%); */
+
+  @media screen and (max-width: 768px){
+    transform: translate(101px);
+    width: 60px;
+    height: 60px
+  }
 `;
 
 export const Deg60 = styled.img`
@@ -137,7 +159,13 @@ export const Deg60 = styled.img`
   width: 80px;
   height: 80px;
   position: absolute;
-  ${({ lightBg }) => lightBg && `filter : invert(100%)`};
+  /* ${({ lightBg }) => lightBg && `filter : invert(100%)`}; */
+
+  @media screen and (max-width: 768px){
+    transform: rotate(61deg) translate(101px) rotate(-61deg);
+    width: 60px;
+    height: 60px
+  }
 `;
 export const Deg120 = styled.img`
   transform: rotate(121deg) translate(151px) rotate(-121deg);
@@ -145,7 +173,13 @@ export const Deg120 = styled.img`
   height: 80px;
   position: absolute;
   /* filter: invert(100%); */
-// `;
+
+  @media screen and (max-width: 768px){
+    transform: rotate(121deg) translate(101px) rotate(-121deg);
+    width: 60px;
+    height: 60px
+  }
+ `;
 // export const Deg135 = styled.img`
 //   transform: rotate(136deg) translate(151px) rotate(-136deg);
 //   width: 80px;
@@ -159,6 +193,12 @@ export const Deg120 = styled.img`
    width: 80px;
    height: 80px;
    position: absolute;
+
+   @media screen and (max-width: 768px){
+    transform: rotate(181deg) translate(101px) rotate(-181deg);
+    width: 60px;
+    height: 60px
+  }
  `;
 
  export const Deg240 = styled.img`
@@ -166,6 +206,12 @@ export const Deg120 = styled.img`
    width: 80px;
    height: 80px;
    position: absolute;
+
+   @media screen and (max-width: 768px){
+    transform: rotate(241deg) translate(101px) rotate(-241deg);
+    width: 60px;
+    height: 60px
+  }
  `;
 
  export const Deg300 = styled.img`
@@ -174,6 +220,12 @@ export const Deg120 = styled.img`
    height: 80px;
    position: absolute;
    filter: invert(100%);
+
+   @media screen and (max-width: 768px){
+    transform: rotate(301deg) translate(101px) rotate(-301deg);
+    width: 60px;
+    height: 60px
+  }
  `;
 
 // export const Deg315 = styled.img`
