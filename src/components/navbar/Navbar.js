@@ -37,18 +37,16 @@ const Navbar = () => {
     showButton();
   }, []);
 
-  // const frontend = useRef(null);
-
-
-  // const scrollToSection = (elementRef) => {
-  //   window.scrollTo({
-  //     top: elementRef.current.offsetTop,
-  //     behavior: "smooth"
-  //   })
-  // }
   const toggleHome = () => {
     scroll.scrollToTop()
   }
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+
   window.addEventListener("resize", showButton);
   return (
     <>
@@ -61,55 +59,75 @@ const Navbar = () => {
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
+            <NavMenu onClick={handleClick} click={click} >
               <NavItem>
-                <NavLinks to="home" 
+                <NavLinks 
+                    onClick={handleClick} 
+                    to="home" 
                     smooth={true}
-                    duration={500}
+                    duration={1000}
+                    delay={100}
                     spy={true}
                     exact="true"
                     offset={-240}
+                    isDynamic={true}
                 >Home</NavLinks>
               </NavItem>
 
 
               <NavItem>
-                <NavLinks to="frontend"
+                <NavLinks 
+                onClick={handleClick} 
+                to="frontend"
                 smooth={true}
-                duration={500}
+                duration={1000}
+                delay={100}
                 spy={true}
                 exact="true"
                 offset={-240}
+                isDynamic={true}
                 >Frontend</NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="backend"
+                <NavLinks 
+                onClick={handleClick} 
+                to="backend"
                 smooth={true}
-                duration={500}
+                duration={1000}
+                delay={100}
                 spy={true}
                 exact="true"
                 offset={-240}
+                isDynamic={true}
                 >Backend</NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="about"
+                <NavLinks 
+                  onClick={handleClick} 
+                  to="about"
                   smooth={true}
-                  duration={500}
+                  duration={1000}
+                  delay={100}
                   spy={true}
                   exact="true"
                   offset={-240}
+                  isDynamic={true}
                 >About Liam</NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="projects"
+                <NavLinks 
+                onClick={handleClick} 
+                  to="projects"
                   smooth={true}
-                  duration={500}
+                  duration={1000}
+                  delay={100}
                   spy={true}
                   exact="true"
                   offset={-240}
+                  isDynamic={true}
                 >Projects</NavLinks>
               </NavItem>
               <NavItemBtn>
