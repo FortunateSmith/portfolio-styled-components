@@ -39,26 +39,22 @@ const Navbar = () => {
   }, []);
 
   const toggleHome = () => {
-    scroll.scrollToTop()
-  }
+    scroll.scrollToTop();
+  };
 
   const opac = () => {
-    // console.log(window.scrollY)
     if (window.scrollY >= 80) {
-      console.log("NOW")
-      setNavOpacity(true)
+      setNavOpacity(true);
     } else {
-      setNavOpacity(false)
+      setNavOpacity(false);
     }
-  }
-
-  window.addEventListener("scroll", opac)
+  };
 
   window.addEventListener("resize", showButton);
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav className={navOpacity ? 'active' : null}  onScroll={opac}>
+        <Nav className={navOpacity ? "active" : null} onScroll={opac}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
               <NavIcon src={Logo} />
@@ -66,52 +62,57 @@ const Navbar = () => {
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
-            <NavMenu onClick={handleClick} click={click} >
+            <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks 
-                    onClick={handleClick} 
-                    to="home" 
+                <NavLinks
+                  onClick={handleClick}
+                  to="home"
+                  smooth={true}
+                  duration={1000}
+                  delay={100}
+                  spy={true}
+                  exact="true"
+                  offset={-157}
+                >
+                  Home
+                </NavLinks>
+              </NavItem>
+
+              <Element>
+                <NavItem>
+                  <NavLinks
+                    onClick={handleClick}
+                    to="frontend"
                     smooth={true}
                     duration={1000}
                     delay={100}
                     spy={true}
                     exact="true"
                     offset={-237}
-  
-                >Home</NavLinks>
-              </NavItem>
-
-              <Element>
-              <NavItem>
-                <NavLinks 
-                onClick={handleClick} 
-                to="frontend"
-                smooth={true}
-                duration={1000}
-                delay={100}
-                spy={true}
-                exact="true"
-                offset={-237}
-                >Frontend</NavLinks>
-              </NavItem>
+                  >
+                    Frontend
+                  </NavLinks>
+                </NavItem>
               </Element>
 
               <NavItem>
-                <NavLinks 
-                onClick={handleClick} 
-                to="backend"
-                smooth={true}
-                duration={1000}
-                delay={100}
-                spy={true}
-                exact="true"
-                offset={-237}
-                >Backend</NavLinks>
+                <NavLinks
+                  onClick={handleClick}
+                  to="backend"
+                  smooth={true}
+                  duration={1000}
+                  delay={100}
+                  spy={true}
+                  exact="true"
+                  offset={-237}
+                >
+                  Backend
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks 
-                  onClick={handleClick} 
+                <NavLinks
+                  onClick={handleClick}
                   to="about"
                   smooth={true}
                   duration={1000}
@@ -119,13 +120,14 @@ const Navbar = () => {
                   spy={true}
                   exact="true"
                   offset={-237}
-
-                >About Liam</NavLinks>
+                >
+                  About Liam
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks 
-                onClick={handleClick} 
+                <NavLinks
+                  onClick={handleClick}
                   to="projects"
                   smooth={true}
                   duration={1000}
@@ -133,8 +135,9 @@ const Navbar = () => {
                   spy={true}
                   exact="true"
                   offset={-237}
-
-                >Projects</NavLinks>
+                >
+                  Projects
+                </NavLinks>
               </NavItem>
               <NavItemBtn>
                 {button ? (
