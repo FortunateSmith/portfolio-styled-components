@@ -19,7 +19,7 @@ export const Nav = styled.nav`
 
   &.active {
     /* background-color: red; */
-    opacity: 0.9;
+    opacity: 0.5;
     transition: 0.5s; 
   }
 `;

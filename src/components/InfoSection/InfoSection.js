@@ -32,6 +32,8 @@ const InfoSection = ({
   topLine,
   lightText,
   lightTextDesc,
+  lightBorder,
+  borderShadow,
   headline,
   description,
   primary,
@@ -56,7 +58,7 @@ const InfoSection = ({
         <Container id={id}>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
-              <TextWrapper>
+              <TextWrapper lightBorder={lightBorder} borderShadow={borderShadow}>
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>

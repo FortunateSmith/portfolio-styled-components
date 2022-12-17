@@ -72,7 +72,7 @@ const Navbar = () => {
                   delay={100}
                   spy={true}
                   exact="true"
-                  offset={-157}
+                  offset={-157  }
                 >
                   Home
                 </NavLinks>
