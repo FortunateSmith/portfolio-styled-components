@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Button } from "../../globalStyles";
 import Logo from "../../images/Logo.png";
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll, Element } from "react-scroll";
 import {
   Nav,
   NavbarContainer,
@@ -20,6 +20,7 @@ import {
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [navOpacity, setNavOpacity] = useState(false);
 
   const handleClick = () => {
     setClick(!click);
@@ -41,17 +42,23 @@ const Navbar = () => {
     scroll.scrollToTop()
   }
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
+  const opac = () => {
+    // console.log(window.scrollY)
+    if (window.scrollY >= 80) {
+      console.log("NOW")
+      setNavOpacity(true)
+    } else {
+      setNavOpacity(false)
+    }
   }
+
+  window.addEventListener("scroll", opac)
 
   window.addEventListener("resize", showButton);
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav>
+        <Nav className={navOpacity ? 'active' : null}  onScroll={opac}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
               <NavIcon src={Logo} />
@@ -69,12 +76,12 @@ const Navbar = () => {
                     delay={100}
                     spy={true}
                     exact="true"
-                    offset={-240}
-                    isDynamic={true}
+                    offset={-237}
+  
                 >Home</NavLinks>
               </NavItem>
 
-
+              <Element>
               <NavItem>
                 <NavLinks 
                 onClick={handleClick} 
@@ -84,10 +91,10 @@ const Navbar = () => {
                 delay={100}
                 spy={true}
                 exact="true"
-                offset={-240}
-                isDynamic={true}
+                offset={-237}
                 >Frontend</NavLinks>
               </NavItem>
+              </Element>
 
               <NavItem>
                 <NavLinks 
@@ -98,8 +105,7 @@ const Navbar = () => {
                 delay={100}
                 spy={true}
                 exact="true"
-                offset={-240}
-                isDynamic={true}
+                offset={-237}
                 >Backend</NavLinks>
               </NavItem>
 
@@ -112,8 +118,8 @@ const Navbar = () => {
                   delay={100}
                   spy={true}
                   exact="true"
-                  offset={-240}
-                  isDynamic={true}
+                  offset={-237}
+
                 >About Liam</NavLinks>
               </NavItem>
 
@@ -126,8 +132,8 @@ const Navbar = () => {
                   delay={100}
                   spy={true}
                   exact="true"
-                  offset={-240}
-                  isDynamic={true}
+                  offset={-237}
+
                 >Projects</NavLinks>
               </NavItem>
               <NavItemBtn>

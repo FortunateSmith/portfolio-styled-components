@@ -14,6 +14,14 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+  opacity: 1;
+  transition: 0.5s;
+
+  &.active {
+    /* background-color: red; */
+    opacity: 0.9;
+    transition: 0.5s; 
+  }
 `;
 
 export const NavbarContainer = styled(Container)`
