@@ -52,6 +52,7 @@ export const Button = styled.button`
     width: 80%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
   }
 `;
 

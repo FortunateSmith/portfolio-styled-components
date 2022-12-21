@@ -50,6 +50,7 @@ const InfoSection = ({
   img180,
   img240,
   img300,
+  startCircle,
 }) => {
   return (
     <>
@@ -76,7 +77,7 @@ const InfoSection = ({
             </InfoColumn>
             <InfoColumn>
               {circle ? (
-                <CircleWrapper start={start}>
+                <CircleWrapper startCircle={startCircle}>
                   {/* Roll from react-reveal lib */}
                   <Roll right>
                     <Deg0 src={img0} />

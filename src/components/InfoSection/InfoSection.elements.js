@@ -13,6 +13,10 @@ export const InfoRow = styled.div`
   align-items: center;
   /* flips which side image is on */
   flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const InfoColumn = styled.div`
@@ -38,6 +42,7 @@ export const TextWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +73,9 @@ export const Heading = styled.h1`
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#f6effc" : "#1a1022")};
   @media screen and (max-width: 768px) {
+    text-align: center;
    font-size: 64px; 
+  
   }
 `;
 
@@ -83,14 +90,16 @@ export const SubTitle = styled.p`
 
   @media screen and (max-width: 768px) {
     font-size: 28px;
-    
+    text-align: center;
   }
 `;
 
 export const ImageWrapper = styled.div`
   max-width: 555px;
   display: flex;
-  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
+  /* justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")}; */
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Img = styled.img`
@@ -108,22 +117,25 @@ export const CircleWrapper = styled.div`
   border-radius: 51%;
   position: relative;
   display: flex;
+  /* justify-content: ${({ startCircle }) => (startCircle ? "flex-start" : "flex-end")}; */
   justify-content: center;
   align-items: center;
   /* align-items: */
   /* margin: 50px; */
-  /* padding-left:15%; */
+  padding-left:20%; 
 
   @media screen and (max-width: 768px){
     width: 201px;
     height: 201px;
-    padding-right: 20%;
+    /* padding-right: 20%; */
+    margin-right: 40%;
   }
 
   @media screen and (max-width: 300px){
     width: 201px;
     height: 201px;
-    padding-right: 30%;
+    /* padding-right: 30%; */
+    margin: 0 auto;
   }
 `;
 
