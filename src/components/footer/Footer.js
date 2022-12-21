@@ -3,13 +3,17 @@ import {
   Foot, FooterContainer, FooterIconBox
 } from "./Footer.elements"
 
-const Footer = () => {
+
+const Footer = ({
+  bgColor,
+  textColor
+}) => {
   return (
     <>
-      <Foot>
-        <FooterContainer>
+      <Foot bgColor={bgColor}>
+        <FooterContainer textColor={textColor}>
           This is a footer
-          <FooterIconBox>
+          <FooterIconBox textColor={textColor}>
             Icons Here
           </FooterIconBox>
         </FooterContainer>

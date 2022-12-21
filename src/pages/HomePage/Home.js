@@ -1,5 +1,6 @@
 import React from "react";
 import { InfoSection, Navbar, Footer } from "../../components";
+// import { FooterObj } from "../../components/footer/FooterData";
 
 import {
   homeObjOne,
@@ -7,6 +8,7 @@ import {
   homeObjThree,
   homeObjFour,
   homeObjFive,
+  footerObj,
 } from "./Data";
 
 const Home = () => {
@@ -18,7 +20,7 @@ const Home = () => {
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjFour} />
       <InfoSection {...homeObjFive} />
-      <Footer/>
+      <Footer {...footerObj}/>
     </>
   );
 };

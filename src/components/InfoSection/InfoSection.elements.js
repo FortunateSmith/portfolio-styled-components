@@ -126,19 +126,7 @@ export const CircleWrapper = styled.div`
     padding-right: 30%;
   }
 `;
-// export const Circle = styled.div`
-//   display: block;
-//   position: absolute;
-//   top: 51%;
-//   left: 51%;
-//   width: 100px;
-//   height: 100px;
-//   margin: -51px;
-//   background: red;
-//   border-radius: 51%;
-//   text-align: center;
-//   line-height: 100px;
-// `;
+
 export const Deg0 = styled.img`
   transform: translate(151px);
   width: 80px;
@@ -179,13 +167,6 @@ export const Deg120 = styled.img`
     height: 60px
   }
  `;
-// export const Deg135 = styled.img`
-//   transform: rotate(136deg) translate(151px) rotate(-136deg);
-//   width: 80px;
-//   height: 80px;
-//   position: absolute;
-//   /* filter: invert(100%); */
-// `;
 
  export const Deg180 = styled.img`
    transform: rotate(181deg) translate(151px) rotate(-181deg);
@@ -226,14 +207,6 @@ export const Deg120 = styled.img`
     height: 60px
   }
  `;
-
-// export const Deg315 = styled.img`
-//   transform: rotate(316deg) translate(151px) rotate(-316deg);
-//   width: 80px;
-//   height: 80px;
-//   position: absolute;
-//   filter: invert(100%);
-// `;
 
 export const Anchor = styled.a`
   text-decoration: none;

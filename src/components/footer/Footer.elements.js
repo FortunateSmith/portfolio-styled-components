@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { Container } from "../../globalStyles";
+// import { Container } from "../../globalStyles";
 
 export const Foot = styled.div`
-  background: #f6effc00;
+  background: ${({bgColor}) => (bgColor ? "#1a1022" : "#f6effc")} ;
   height: 80px;
-  position: sticky;
-  bottom: 0;
-  /* opacity: 0.8; */
+  /* position: sticky;
+  bottom: 0; */
+
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -16,15 +16,15 @@ export const Foot = styled.div`
 export const FooterContainer = styled.div`
   display: flex;
   align-items: center;
-  color: black;
+  color: ${({textColor}) => (textColor ? "#f6effc" : "#1a1022")};
   justify-content: space-between;
   padding: 0 5%;
   width: 90%;
-  background: #f6effc00;
+
 `
 
 export const FooterIconBox = styled.div`
-  color: red;
+  color: ${({textColor}) => (textColor ? "#f6effc" : "#1a1022")};
   display: flex;
   justify-content: flex-end;
   opacity: 1;

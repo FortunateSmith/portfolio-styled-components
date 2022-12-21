@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Button } from "../../globalStyles";
 // import { Link } from "react-router-dom";
 // import ReactImg from "../../images/techLogos/React.png"
-import { Roll, Zoom } from "react-reveal";
+import { Fade, Roll } from "react-reveal";
 
 import {
   InfoSec,
@@ -51,14 +51,16 @@ const InfoSection = ({
   img240,
   img300,
 }) => {
-
   return (
     <>
-      <InfoSec lightBg={lightBg} >
+      <InfoSec lightBg={lightBg}>
         <Container id={id}>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
-              <TextWrapper lightBorder={lightBorder} borderShadow={borderShadow}>
+              <TextWrapper
+                lightBorder={lightBorder}
+                borderShadow={borderShadow}
+              >
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
@@ -75,22 +77,22 @@ const InfoSection = ({
             <InfoColumn>
               {circle ? (
                 <CircleWrapper start={start}>
+                  {/* Roll from react-reveal lib */}
                   <Roll right>
-                    {/* <Circle> */}
                     <Deg0 src={img0} />
                     <Deg60 src={img60} />
                     <Deg120 src={img120} />
                     <Deg180 src={img180} />
                     <Deg240 src={img240} />
                     <Deg300 src={img300} />
-                    {/* </Circle> */}
                   </Roll>
                 </CircleWrapper>
               ) : (
                 <ImageWrapper start={start}>
-                  <Zoom>
+                  {/* Fade from react-reveal lib */}
+                  <Fade>
                     <Img src={img} alt={alt} />
-                  </Zoom>
+                  </Fade>
                 </ImageWrapper>
               )}
             </InfoColumn>

@@ -4,7 +4,7 @@ export const homeObjOne = {
   primary: false,
   imgStart: "",
   lightTopLine: false,
-  topLine: "Web Developer",
+  topLine: "Developer",
   lightText: false,
   lightTextDesc: false,
   headline: "Liam Smith",
@@ -100,3 +100,9 @@ export const homeObjFive = {
   alt: "Image",
   viewButton: false,
 };
+
+
+export const footerObj = {
+  bgColor: true,
+  textColor: true
+}
