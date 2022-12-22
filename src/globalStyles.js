@@ -52,7 +52,11 @@ export const Button = styled.button`
     width: 80%;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    /* margin: 0 auto !important; */
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0 auto !important;
   }
 `;
 

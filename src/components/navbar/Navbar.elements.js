@@ -19,7 +19,7 @@ export const Nav = styled.nav`
 
   &.active {
     /* background-color: red; */
-    opacity: 0.5;
+    opacity: 0.75;
     transition: 0.5s; 
   }
 `;
@@ -73,7 +73,7 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     top: 80px;
     /* click is false, NavMenu hidden -- click is true, slides from left */
@@ -128,7 +128,11 @@ export const NavLinks = styled(LinkScroll)`
     &:hover {
       color: #101522;
       transition: all 0.3s ease;
+      border-bottom: none;
     }
+    &.active {
+    border-bottom: none;
+  }
   }
 `;
 

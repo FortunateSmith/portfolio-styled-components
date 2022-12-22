@@ -26,6 +26,7 @@ const Navbar = () => {
     setClick(!click);
   };
 
+  // toggles button between regular and big when button switches from full nav to hamburger
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -34,22 +35,28 @@ const Navbar = () => {
     }
   };
 
+  // to call showButton
   useEffect(() => {
     showButton();
   }, []);
 
+  // scroll to top on logo click
   const toggleHome = () => {
     scroll.scrollToTop();
   };
 
+  // set opacity (designed for navbar)
   const opac = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 80 && window.innerWidth >= 960) {
       setNavOpacity(true);
     } else {
       setNavOpacity(false);
     }
   };
 
+  // window.addEventListener("scroll", handleClick)
+  window.addEventListener("scroll", opac)
+  // triggers useEffect when window width hits 960px
   window.addEventListener("resize", showButton);
   return (
     <>
@@ -72,28 +79,26 @@ const Navbar = () => {
                   delay={100}
                   spy={true}
                   exact="true"
-                  offset={-157  }
+                  offset={-157}
                 >
                   Home
                 </NavLinks>
               </NavItem>
 
-              <Element>
-                <NavItem>
-                  <NavLinks
-                    onClick={handleClick}
-                    to="frontend"
-                    smooth={true}
-                    duration={1000}
-                    delay={100}
-                    spy={true}
-                    exact="true"
-                    offset={-237}
-                  >
-                    Frontend
-                  </NavLinks>
-                </NavItem>
-              </Element>
+              <NavItem>
+                <NavLinks
+                  onClick={handleClick}
+                  to="frontend"
+                  smooth={true}
+                  duration={1000}
+                  delay={100}
+                  spy={true}
+                  exact="true"
+                  offset={-240}
+                >
+                  Frontend
+                </NavLinks>
+              </NavItem>
 
               <NavItem>
                 <NavLinks
@@ -104,7 +109,7 @@ const Navbar = () => {
                   delay={100}
                   spy={true}
                   exact="true"
-                  offset={-237}
+                  offset={-240}
                 >
                   Backend
                 </NavLinks>
@@ -119,7 +124,7 @@ const Navbar = () => {
                   delay={100}
                   spy={true}
                   exact="true"
-                  offset={-237}
+                  offset={-240}
                 >
                   About Liam
                 </NavLinks>
@@ -134,7 +139,7 @@ const Navbar = () => {
                   delay={100}
                   spy={true}
                   exact="true"
-                  offset={-237}
+                  offset={-240}
                 >
                   Projects
                 </NavLinks>
