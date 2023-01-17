@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button } from "../../globalStyles";
+import { Container } from "../../globalStyles";
 // import { Link } from "react-router-dom";
 // import ReactImg from "../../images/techLogos/React.png"
 import { Fade, Roll } from "react-reveal";
@@ -12,11 +12,11 @@ import {
   TopLine,
   Heading,
   SubTitle,
+  Resume,
   ImageWrapper,
   Img,
   Anchor,
   CircleWrapper,
-  // Circle,
   Deg0,
   Deg60,
   Deg120,
@@ -37,7 +37,7 @@ const InfoSection = ({
   headline,
   description,
   primary,
-  buttonLabel,
+  resumeLabel,
   start,
   img,
   alt,
@@ -51,13 +51,14 @@ const InfoSection = ({
   img240,
   img300,
   startCircle,
+  stationary,
 }) => {
   return (
     <>
       <InfoSec lightBg={lightBg}>
         <Container id={id}>
           <InfoRow imgStart={imgStart}>
-            <InfoColumn>
+            <InfoColumn stationary={stationary}>
               <TextWrapper
                 lightBorder={lightBorder}
                 borderShadow={borderShadow}
@@ -68,9 +69,7 @@ const InfoSection = ({
 
                 {viewButton ? (
                   <Anchor href="https://resume.creddle.io/resume/axbddmzuru6">
-                    <Button big fontBig primary={primary}>
-                      {buttonLabel}
-                    </Button>
+                    <Resume primary={primary}>{resumeLabel}</Resume>
                   </Anchor>
                 ) : null}
               </TextWrapper>
@@ -79,14 +78,16 @@ const InfoSection = ({
               {circle ? (
                 <CircleWrapper startCircle={startCircle}>
                   {/* Roll from react-reveal lib */}
-                  <Roll right>
-                    <Deg0 src={img0} />
-                    <Deg60 src={img60} />
-                    <Deg120 src={img120} />
-                    <Deg180 src={img180} />
-                    <Deg240 src={img240} />
-                    <Deg300 src={img300} />
-                  </Roll>
+                  <Fade>
+                    <Roll right>
+                      <Deg0 src={img0} />
+                      <Deg60 src={img60} />
+                      <Deg120 src={img120} />
+                      <Deg180 src={img180} />
+                      <Deg240 src={img240} />
+                      <Deg300 src={img300} />
+                    </Roll>
+                  </Fade>
                 </CircleWrapper>
               ) : (
                 <ImageWrapper start={start}>

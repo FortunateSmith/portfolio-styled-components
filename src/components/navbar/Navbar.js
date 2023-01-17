@@ -55,7 +55,7 @@ const Navbar = () => {
   };
 
   // window.addEventListener("scroll", handleClick)
-  window.addEventListener("scroll", opac)
+  window.addEventListener("scroll", opac);
   // triggers useEffect when window width hits 960px
   window.addEventListener("resize", showButton);
   return (
@@ -79,7 +79,7 @@ const Navbar = () => {
                   delay={100}
                   spy={true}
                   exact="true"
-                  offset={-157}
+                  offset={-240}
                 >
                   Home
                 </NavLinks>
@@ -146,11 +146,29 @@ const Navbar = () => {
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/about">
+                  <NavBtnLink
+                    onClick={handleClick}
+                    to="contact"
+                    smooth={true}
+                    duration={1000}
+                    delay={100}
+                    spy={true}
+                    exact="true"
+                    offset={-240}
+                  >
                     <Button primary>Contact</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/about">
+                  <NavBtnLink
+                    onClick={handleClick}
+                    to="contact"
+                    smooth={true}
+                    duration={1000}
+                    delay={100}
+                    spy={true}
+                    exact="true"
+                    offset={-240}
+                  >
                     <Button fontBig primary>
                       Contact
                     </Button>

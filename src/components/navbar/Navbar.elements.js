@@ -16,12 +16,6 @@ export const Nav = styled.nav`
   z-index: 999;
   opacity: 1;
   transition: 0.5s;
-
-  &.active {
-    /* background-color: red; */
-    opacity: 0.75;
-    transition: 0.5s; 
-  }
 `;
 
 export const NavbarContainer = styled(Container)`

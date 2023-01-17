@@ -1,5 +1,5 @@
 import React from "react";
-import { InfoSection, Navbar, Footer } from "../../components";
+import { InfoSection, Navbar, Footer, ContactForm } from "../../components";
 // import { FooterObj } from "../../components/footer/FooterData";
 
 import {
@@ -20,6 +20,7 @@ const Home = () => {
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjFour} />
       <InfoSection {...homeObjFive} />
+      <ContactForm/>
       <Footer {...footerObj}/>
     </>
   );

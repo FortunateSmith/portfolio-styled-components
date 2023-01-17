@@ -8,12 +8,15 @@ export const homeObjOne = {
   lightText: false,
   lightTextDesc: false,
   headline: "Liam Smith",
-  description: "Using design and data to help people connect",
-  buttonLabel: "Resume",
+  description: "Using design and data to help people connect.",
+  resumeLabel: "Check out my resume",
   img: require("../../images/Headshot-Transparent-BG.png"),
   start: "false",
   alt: "Image",
   viewButton: true,
+  socialIconLI: require("../../images/socialLogos/LI-In-Bug.png"),
+  socialIconGit: require("../../images/socialLogos/github-mark.png"),
+  stationary: true
 };
 
 export const homeObjTwo = {
@@ -26,7 +29,7 @@ export const homeObjTwo = {
   lightText: true,
   lightTextDesc: true,
   headline: "FrontEnd",
-  description: "Engage with users through well designed frontend.",
+  description: "Some of the front end tech I've worked with over the last 18 months to create appealing UI.",
   buttonLabel: "Contact",
   img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
   start: "",
@@ -52,7 +55,7 @@ export const homeObjThree = {
   lightText: false,
   lightTextDesc: false,
   headline: "BackEnd",
-  description: "Manage requests, responses and data with the right backend for your project.",
+  description: "Tech skills I have been developing to manage requests, responses and data on the backend.",
   buttonLabel: "",
   img: "",
   start: "",
