@@ -99,6 +99,7 @@ export const Heading = styled.h1`
 export const SubTitle = styled.p`
   width: 290px;
   margin-bottom: 35px;
+  margin-top: 35px;
   /* border: solid 2px;
   border-radius: 5%; */
   font-size: 18px;
@@ -157,6 +158,7 @@ export const Img = styled.img`
     max-width: 100%;
     min-width: 300px;
     height: auto;
+    object-fit: cover;
   }
 `;
 

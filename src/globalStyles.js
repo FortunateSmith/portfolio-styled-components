@@ -3,13 +3,14 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
   *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family:"Raleway", sans-serif;
     font-weight: 300;
-    font-style: italic;
+    /* font-style: italic; */
   }
 `;
 

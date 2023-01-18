@@ -88,23 +88,7 @@ export const homeObjFour = {
   viewButton: false,
 };
 
-export const homeObjFive = {
-  id: "projects",
-  lightBg: true,
-  primary: false,
-  imgStart: "start",
-  lightTopLine: false,
-  topLine: "",
-  lightText: false,
-  lightTextDesc: false,
-  headline: "Projects",
-  // description: "Reactjs, HTML, CSS, EJS, SASS",
-  buttonLabel: "",
-  img: "",
-  start: "",
-  alt: "Image",
-  viewButton: false,
-};
+
 
 
 export const footerObj = {
