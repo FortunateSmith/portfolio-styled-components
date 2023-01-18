@@ -4,11 +4,11 @@ export const homeObjOne = {
   primary: false,
   imgStart: "",
   lightTopLine: false,
-  topLine: "Developer",
+  topLine: "Hi, my name is",
   lightText: false,
   lightTextDesc: false,
   headline: "Liam Smith",
-  description: "Using design and data to help people connect.",
+  description: "I use design and data to help people connect.",
   resumeLabel: "Check out my resume",
   img: require("../../images/Headshot-Transparent-BG.png"),
   start: "false",
@@ -20,16 +20,16 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-  id: "frontend",
-  lightBg: false,
-  primary: true,
+  id: "skills",
+  lightBg: true,
+  primary: false,
   imgStart: "start",
   lightTopLine: true,
   topLine: "",
-  lightText: true,
-  lightTextDesc: true,
+  lightText: false,
+  lightTextDesc: false,
   headline: "Skills",
-  description: "Over the last 18 months I have worked with many front and backend tools, technologies and languages including: JavaScript, HTML, CSS, SASS, SQL, NodeJS, React, Gatsby, Ajax, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, PostgreSQL and Git.",
+  description: "Since autumn 2021, when my new journey began, I have worked with many front and backend tools, technologies and languages including: JavaScript, HTML, CSS, SASS, SQL, NodeJS, React, Gatsby, Ajax, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, PostgreSQL and Git.",
   buttonLabel: "Contact",
   img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
   start: "",
@@ -42,7 +42,7 @@ export const homeObjTwo = {
   img120: require("../../images/techLogos/frontend/Sass.png"),
   img180: require("../../images/techLogos/frontend/Gatsby_Monogram.png"),
   img240: require("../../images/techLogos/frontend/bootstrap-logo.png"),
-  img300: require("../../images/techLogos/frontend/jquery.png")
+  img300: require("../../images/techLogos/backend/JavaScript.png")
 };
 
 // export const homeObjThree = {
@@ -70,23 +70,23 @@ export const homeObjTwo = {
 //   img240: require("../../images/techLogos/frontend/bootstrap-logo.png"),
 //   img300: require("../../images/techLogos/frontend/jquery.png")
 // };
-// export const homeObjFour = {
-//   id: "about",
-//   lightBg: false,
-//   primary: true,
-//   imgStart: "start",
-//   lightTopLine: true,
-//   topLine: "",
-//   lightText: true,
-//   lightTextDesc: true,
-//   headline: "About Liam",
-//   description: "I am a developer, musician and humanist with a broad range of interests. I aim to merge arts, development and community, strengthening real world networks and contributing to positive social change. I believe that technology must improve the lives of average people and be used to flatten society.",
-//   buttonLabel: "",
-//   img: require("../../images/Headshot-Transparent-BG.png"),
-//   start: "",
-//   alt: "Image",
-//   viewButton: false,
-// };
+export const homeObjFour = {
+  id: "about",
+  lightBg: true,
+  primary: false,
+  imgStart: "start",
+  lightTopLine: true,
+  topLine: "",
+  lightText: false,
+  lightTextDesc: false,
+  headline: "About Me",
+  description: "I am a developer, musician, nature enthusiast and humanist with a broad range of interests. I aim to merge arts, development and community, strengthening real world networks and contributing to positive social change. I believe that technology must improve the lives of average people and be used to flatten society.",
+  buttonLabel: "",
+  img: require("../../images/Fairy-Lake.jpeg"),
+  start: "",
+  alt: "Image",
+  viewButton: false,
+};
 
 export const homeObjFive = {
   id: "projects",

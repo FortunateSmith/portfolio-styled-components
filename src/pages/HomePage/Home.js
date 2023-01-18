@@ -6,7 +6,7 @@ import {
   homeObjOne,
   homeObjTwo,
   // homeObjThree,
-  // homeObjFour,
+  homeObjFour,
   homeObjFive,
   footerObj,
 } from "./Data";
@@ -18,7 +18,7 @@ const Home = () => {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       {/* <InfoSection {...homeObjThree} /> */}
-      {/* <InfoSection {...homeObjFour} /> */}
+      <InfoSection {...homeObjFour} />
       <InfoSection {...homeObjFive} />
       <ContactForm/>
       <Footer {...footerObj}/>

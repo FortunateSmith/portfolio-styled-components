@@ -8,6 +8,11 @@ export const InfoSec = styled.div`
   display: flex;
   align-items: center;
 
+  @media screen and (max-width: 1000px) {
+    height: auto;
+    padding-top: 2em;
+  }
+
   @media screen and (max-width: 768px) {
     height: auto;
     padding: 5em;
@@ -28,6 +33,8 @@ export const InfoRow = styled.div`
 `;
 
 export const InfoColumn = styled.div`
+  display: flex;
+  align-items: center;
   margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
@@ -48,6 +55,7 @@ export const InfoColumn = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding: 60px 20px 20px 60px;
+
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
@@ -132,7 +140,7 @@ export const ImageWrapper = styled.div`
   /* justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")}; */
   justify-content: center;
   align-items: center;
-  
+
 `;
 
 export const Img = styled.img`
@@ -142,6 +150,13 @@ export const Img = styled.img`
   vertical-align: middle;
   display: inline-block;
   /* max-height: 500px; */
+
+    
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
 `;
 
 // Circle CSS ///////////////////////////////////////////////
@@ -163,35 +178,44 @@ export const CircleWrapper = styled.div`
   @media screen and (max-width: 768px){
     width: 201px;
     height: 201px;
-    padding-left: 30%;
+    padding-left: 5%;
     margin-right: 40%;
   }
 
-  @media screen and (max-width: 300px){
+  @media screen and (max-width: 396px){
     width: 201px;
     height: 201px;
-    /* padding-right: 30%; */
+    padding-right: 30%;
     margin: 0 auto;
   }
-`;
+  `;
 
 export const Deg0 = styled.img`
   transform: translate(151px);
   width: 80px;
   height: 80px;
   position: absolute;
+  border-radius: 50%;
   /* filter: invert(100%); */
-
+  
   @media screen and (max-width: 901px){
     transform: translate(126px);
     width: 70px;
     height: 70px
   }
-
+  
   @media screen and (max-width: 768px){
     transform: translate(101px);
     width: 60px;
     height: 60px
+  }
+  
+  &:hover{
+    /* background-color: #8f8393; */
+    /* filter: invert(0.9); */
+    filter: drop-shadow(20px 16px 10px black);
+    transition: filter 0.5s ease;
+    
   }
 `;
 
@@ -213,7 +237,16 @@ export const Deg60 = styled.img`
     width: 60px;
     height: 60px
   }
+
+  &:hover{
+    /* background-color: #8f8393; */
+    /* filter: invert(0.9); */
+    filter: drop-shadow(20px 16px 10px #212121);
+    transition: filter 0.5s ease;
+    
+  }
 `;
+
 export const Deg120 = styled.img`
   transform: rotate(121deg) translate(151px) rotate(-121deg);
   width: 80px;
@@ -231,6 +264,14 @@ export const Deg120 = styled.img`
     transform: rotate(121deg) translate(101px) rotate(-121deg);
     width: 60px;
     height: 60px
+  }
+
+  &:hover{
+    /* background-color: #8f8393; */
+    /* filter: invert(0.9); */
+    filter: drop-shadow(20px 16px 10px black);
+    transition: filter 0.5s ease;
+    
   }
  `;
 
@@ -251,6 +292,14 @@ export const Deg120 = styled.img`
     width: 60px;
     height: 60px
   }
+
+  &:hover{
+    /* background-color: #8f8393; */
+    /* filter: invert(0.9); */
+    filter: drop-shadow(20px 16px 10px black);
+    transition: filter 0.5s ease;
+    
+  }
  `;
 
  export const Deg240 = styled.img`
@@ -270,6 +319,14 @@ export const Deg120 = styled.img`
     width: 60px;
     height: 60px
   }
+
+  &:hover{
+    /* background-color: #8f8393; */
+    /* filter: invert(0.9); */
+    filter: drop-shadow(20px 16px 10px black);
+    transition: filter 0.5s ease;
+    
+  }
  `;
 
  export const Deg300 = styled.img`
@@ -277,7 +334,7 @@ export const Deg120 = styled.img`
    width: 80px;
    height: 80px;
    position: absolute;
-   filter: invert(100%);
+   /* filter: invert(100%); */
 
    @media screen and (max-width: 901px){
     transform: rotate(301deg) translate(126px) rotate(-301deg);
@@ -289,6 +346,14 @@ export const Deg120 = styled.img`
     transform: rotate(301deg) translate(101px) rotate(-301deg);
     width: 60px;
     height: 60px
+  }
+
+  &:hover{
+    /* background-color: #8f8393; */
+    /* filter: invert(0.9); */
+    filter: drop-shadow(20px 16px 10px black);
+    transition: filter 0.5s ease;
+    
   }
  `;
 

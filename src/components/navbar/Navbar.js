@@ -88,7 +88,7 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   onClick={handleClick}
-                  to="frontend"
+                  to="skills"
                   smooth={true}
                   duration={1000}
                   delay={100}
@@ -100,7 +100,7 @@ const Navbar = () => {
                 </NavLinks>
               </NavItem>
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks
                   onClick={handleClick}
                   to="backend"
@@ -113,7 +113,7 @@ const Navbar = () => {
                 >
                   Backend
                 </NavLinks>
-              </NavItem>
+              </NavItem> */}
 
               <NavItem>
                 <NavLinks
