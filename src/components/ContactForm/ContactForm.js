@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Fade } from "react-reveal";
 
 import {
   Form,
@@ -40,7 +41,8 @@ const ContactForm = () => {
         method="POST"
         target="_blank"
         id="contact"
-      >
+        >
+        <Fade>
         <InputFields>
           <ContactHeader>Let's Chat!</ContactHeader>
 
@@ -66,6 +68,7 @@ const ContactForm = () => {
         </TextSubmit>
           {submitted ? <PopUp className="text-2xl">Thank you!</PopUp> : <PopUp />}
           {submitted ? <PopUp className="text-2xl">I will be in touch soon.</PopUp> : <PopUp />}
+      </Fade>
       </Form>
     </FormSection>
   );

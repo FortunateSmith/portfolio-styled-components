@@ -36,7 +36,8 @@ export const TextSubmit = styled.div`
 export const TextArea = styled.textarea`
   padding: 1em;
   width: 100%;
-  height: 80%;
+  height: 296px;
+  max-width: 372px;
   border-radius: 8px;
 `;
 
