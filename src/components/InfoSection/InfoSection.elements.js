@@ -111,11 +111,11 @@ export const Resume = styled.div`
   margin: none;
   height: 100px;
   width: 250px;
-  border: solid 2px #1a1022;
+  border: solid 3px #1a1022;
   border-radius: 8px;
   font-size: 20px;
   font-weight: 24;
-  box-shadow: 3px 3px 1px #1a1022;
+
   color: ${({ primary }) => (primary ? "#fefeff" : "#1a1022")};
   background: ${({ primary }) => (primary ? "#82788b" : "#ddd7e3")}; 
 

@@ -5,8 +5,8 @@ import { InfoSection, Navbar, Footer, ContactForm } from "../../components";
 import {
   homeObjOne,
   homeObjTwo,
-  homeObjThree,
-  homeObjFour,
+  // homeObjThree,
+  // homeObjFour,
   homeObjFive,
   footerObj,
 } from "./Data";
@@ -17,8 +17,8 @@ const Home = () => {
       <Navbar/>
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
-      <InfoSection {...homeObjThree} />
-      <InfoSection {...homeObjFour} />
+      {/* <InfoSection {...homeObjThree} /> */}
+      {/* <InfoSection {...homeObjFour} /> */}
       <InfoSection {...homeObjFive} />
       <ContactForm/>
       <Footer {...footerObj}/>
