@@ -96,7 +96,7 @@ const Navbar = () => {
                   exact="true"
                   offset={-240}
                 >
-                  Frontend
+                  Skills
                 </NavLinks>
               </NavItem>
 
