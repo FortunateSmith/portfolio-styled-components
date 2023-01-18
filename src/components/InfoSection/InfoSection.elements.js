@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const InfoSec = styled.div`
-  color: "#fefeff";
+  color: "#f6ffff";
   padding: 160px 0;
   height: 100vh;
-  background: ${({ lightBg }) => (lightBg ? "#fefeff" : "#333034")};
+  background: ${({ lightBg }) => (lightBg ? "#f6ffff" : "#303333")};
   display: flex;
   align-items: center;
 
@@ -68,7 +68,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#fefeff" : "#1a1022")};
+  color: ${({ lightTopLine }) => (lightTopLine ? "#f6ffff" : "#1a1022")};
   /* background-color: black; */
   font-size: 18px;
   line-height: 16px;
@@ -88,7 +88,7 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? "#fefeff" : "#1a1022")};
+  color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
   @media screen and (max-width: 768px) {
     text-align: center;
    font-size: 64px; 
@@ -103,7 +103,7 @@ export const SubTitle = styled.p`
   border-radius: 5%; */
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#fefeff" : "#1a1022")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#f6ffff" : "#1a1022")};
 
   @media screen and (max-width: 768px) {
     font-size: 28px;
@@ -119,18 +119,19 @@ export const Resume = styled.div`
   margin: none;
   height: 100px;
   width: 250px;
-  border: solid 3px #1a1022;
+  border: solid 2px #1a1022;
   border-radius: 8px;
   font-size: 20px;
   font-weight: 24;
 
-  color: ${({ primary }) => (primary ? "#fefeff" : "#1a1022")};
-  background: ${({ primary }) => (primary ? "#82788b" : "#ddd7e3")}; 
+  color: #1a1022;
+  background: #dffbfd;
 
   &:hover {
-    transition: all 0.3s ease-out;
-    background: ${({ primary }) => (primary ? "#fefeff": "#82788b")};
-    color: ${({ primary }) => (primary ? "#101522" : "#fefeff")};
+    transition: all 0.2s ease-out;
+    background: ${({ primary }) => (primary ? "#f6ffff": "#82788b")};
+
+    border-color: #2cf4ff
   }
 `
 
@@ -372,7 +373,7 @@ export const Anchor = styled.a`
 // export const SideBar = styled.div`
 //   width: 80px;
 //   height: 100vh;
-//   background: linear-gradient(to right, #948f97, #fefeff); 
+//   background: linear-gradient(to right, #948f97, #f6ffff); 
 //   position: absolute;
 //   top: 80px;
 //   display: flex;
@@ -380,7 +381,7 @@ export const Anchor = styled.a`
 //   justify-content: space-evenly;
 
 //   @media screen and (max-width: 768px) {
-//     background: #fefeff;
+//     background: #f6ffff;
 //   }
 // `
 

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const FormSection = styled.div`
-  color: "#fefeff";
+  color: "#f6ffff";
   padding: 160px 0;
   height: 100vh;
-  background: ${({ lightBg }) => (lightBg ? "#fefeff" : "#333034")};
+  background: ${({ lightBg }) => (lightBg ? "#f6ffff" : "#303333")};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,6 +39,13 @@ export const TextArea = styled.textarea`
   height: 296px;
   max-width: 372px;
   border-radius: 8px;
+  border: 3px solid #2cf4ff;
+  margin-bottom: 25px;
+
+  @media screen and (max-width: 480px) {
+    width: 90vw;
+    font-size: 24px;
+  }
 `;
 
 export const InputFields = styled.div`
@@ -50,11 +57,11 @@ export const InputFields = styled.div`
 `;
 
 export const ContactHeader = styled.h1`
-  color: #fefeff;
+  color: #f6ffff;
   margin-bottom: 12px;
   font-size: 48px;
   line-height: 1.1;
-  /* color: ${({ lightText }) => (lightText ? "#fefeff" : "#1a1022")}; */
+  /* color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")}; */
   @media screen and (max-width: 768px) {
     text-align: center;
     font-size: 64px;
@@ -63,9 +70,21 @@ export const ContactHeader = styled.h1`
 
 export const Input = styled.input`
   border-radius: 4px;
+  border: 2px solid #2cf4ff;
+  margin: 5px;
+
+  @media screen and (max-width: 480px) {
+    width: 80vw;
+    font-size: 24px;
+  }
 `;
 
 export const PopUp = styled.div`
   align-self: center;
-  color: #fefeff
+  color: #f6ffff;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    font-size: 24px;
+  }
 `

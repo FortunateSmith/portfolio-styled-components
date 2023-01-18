@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Fade } from "react-reveal";
 
+
+import { Button } from "../../globalStyles";
 import {
   Form,
   TextArea,
@@ -11,7 +13,6 @@ import {
   Input,
   PopUp
 } from "./ContactFormElements";
-import { Button } from "../../globalStyles";
 
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/74235d60-969d-11ed-a003-6f0b76086b1c"; // TODO - fill on the later step
@@ -64,7 +65,7 @@ const ContactForm = () => {
             name="message"
           />
 
-          <Button type="submit">Send a message</Button>
+          <Button fontBig type="submit">Send a message</Button>
         </TextSubmit>
           {submitted ? <PopUp className="text-2xl">Thank you!</PopUp> : <PopUp />}
           {submitted ? <PopUp className="text-2xl">I will be in touch soon.</PopUp> : <PopUp />}

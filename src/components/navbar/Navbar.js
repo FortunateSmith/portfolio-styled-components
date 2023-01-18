@@ -88,6 +88,21 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   onClick={handleClick}
+                  to="about"
+                  smooth={true}
+                  duration={1000}
+                  delay={100}
+                  spy={true}
+                  exact="true"
+                  offset={-240}
+                >
+                  About Liam
+                </NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks
+                  onClick={handleClick}
                   to="skills"
                   smooth={true}
                   duration={1000}
@@ -114,21 +129,6 @@ const Navbar = () => {
                   Backend
                 </NavLinks>
               </NavItem> */}
-
-              <NavItem>
-                <NavLinks
-                  onClick={handleClick}
-                  to="about"
-                  smooth={true}
-                  duration={1000}
-                  delay={100}
-                  spy={true}
-                  exact="true"
-                  offset={-240}
-                >
-                  About Liam
-                </NavLinks>
-              </NavItem>
 
               <NavItem>
                 <NavLinks
