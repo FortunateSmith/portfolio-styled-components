@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "../../globalStyles";
+import { Slide } from "react-reveal";
 import {
   Heading,
   ImageWrapper,
@@ -24,6 +25,7 @@ const Projects = ({
   return (
     <ProjectSection>
       <Container>
+      <Slide right>
         <TextWrapper>
         <Heading>{headline}</Heading>
         </TextWrapper>
@@ -67,6 +69,7 @@ const Projects = ({
             </Project>
           </InfoColumn>
         </ProjectInfoRow>
+        </Slide>
       </Container>
     </ProjectSection>
   );

@@ -12,9 +12,8 @@ const Footer = ({
     <>
       <Foot bgColor={bgColor}>
         <FooterContainer textColor={textColor}>
-          This is a footer
           <FooterIconBox textColor={textColor}>
-            Icons Here
+            &copy; 2023
           </FooterIconBox>
         </FooterContainer>
       </Foot>

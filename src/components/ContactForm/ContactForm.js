@@ -65,7 +65,7 @@ const ContactForm = () => {
             name="message"
           />
 
-          <Button fontBig type="submit">Send a message</Button>
+          <Button fontBig type="submit">Send</Button>
         </TextSubmit>
           {submitted ? <PopUp className="text-2xl">Thank you!</PopUp> : <PopUp />}
           {submitted ? <PopUp className="text-2xl">I will be in touch soon.</PopUp> : <PopUp />}

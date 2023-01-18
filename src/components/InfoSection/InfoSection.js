@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../../globalStyles";
 // import { Link } from "react-router-dom";
 // import ReactImg from "../../images/techLogos/React.png"
-import { Fade, Roll } from "react-reveal";
+import { Fade, Roll, Slide } from "react-reveal";
 
 import {
   InfoSec,
@@ -68,9 +68,11 @@ const InfoSection = ({
                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
 
                 {viewButton ? (
+                  <Slide left>
                   <Anchor href="https://resume.creddle.io/resume/axbddmzuru6">
                     <Resume primary={primary}>{resumeLabel}</Resume>
                   </Anchor>
+                  </Slide>
                 ) : null}
               </TextWrapper>
             </InfoColumn>
