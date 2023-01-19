@@ -63,15 +63,18 @@ const InfoSection = ({
                 lightBorder={lightBorder}
                 borderShadow={borderShadow}
               >
+                <Fade>
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
-
+                  <Heading lightText={lightText}>{headline}</Heading>
+                  <SubTitle lightTextDesc={lightTextDesc}>
+                    {description}
+                  </SubTitle>
+                </Fade>
                 {viewButton ? (
                   <Slide left>
-                  <Anchor href="https://resume.creddle.io/resume/axbddmzuru6">
-                    <Resume primary={primary}>{resumeLabel}</Resume>
-                  </Anchor>
+                    <Anchor href="https://resume.creddle.io/resume/axbddmzuru6">
+                      <Resume primary={primary}>{resumeLabel}</Resume>
+                    </Anchor>
                   </Slide>
                 ) : null}
               </TextWrapper>

@@ -42,7 +42,7 @@ export const InfoColumn = styled.div`
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;
-  flex-shrink: ${({stationary}) => (stationary ? "0" : "1")};
+  flex-shrink: ${({ stationary }) => (stationary ? "0" : "1")};
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
@@ -56,14 +56,12 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding: 60px 20px 20px 60px;
 
-
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
     padding-left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 `;
 
@@ -76,11 +74,11 @@ export const TopLine = styled.div`
   letter-spacing: 1.4px;
   margin-bottom: 16px;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     font-size: 32px;
   }
 
-  @media screen and (max-width: 300px){
+  @media screen and (max-width: 300px) {
     font-size: 24px;
   }
 `;
@@ -89,10 +87,10 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
+  text-decoration: underline #1a1022 1px; 
   @media screen and (max-width: 768px) {
     text-align: center;
-   font-size: 64px; 
-  
+    font-size: 64px;
   }
 `;
 
@@ -130,11 +128,11 @@ export const Resume = styled.div`
 
   &:hover {
     transition: all 0.2s ease-out;
-    background: ${({ primary }) => (primary ? "#f6ffff": "#82788b")};
+    background: ${({ primary }) => (primary ? "#f6ffff" : "#82788b")};
 
-    border-color: #2cf4ff
+    border-color: #2cf4ff;
   }
-`
+`;
 
 export const ImageWrapper = styled.div`
   max-width: 555px;
@@ -142,7 +140,6 @@ export const ImageWrapper = styled.div`
   /* justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")}; */
   justify-content: center;
   align-items: center;
-
 `;
 
 export const Img = styled.img`
@@ -153,7 +150,6 @@ export const Img = styled.img`
   display: inline-block;
   /* max-height: 500px; */
 
-    
   @media screen and (max-width: 768px) {
     max-width: 100%;
     min-width: 300px;
@@ -171,27 +167,29 @@ export const CircleWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left:20%; 
+  padding-left: 20%;
 
   @media screen and (max-width: 991px) {
     width: 251px;
     height: 251px;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     width: 201px;
     height: 201px;
     padding-left: 5%;
-    margin-right: 40%;
+    margin-right: 20%;
+    justify-content: center;
   }
 
-  @media screen and (max-width: 396px){
+  @media screen and (max-width: 396px) {
     width: 201px;
     height: 201px;
-    padding-right: 30%;
+    padding-right: 50%;
     margin: 0 auto;
+    justify-content: center;
   }
-  `;
+`;
 
 export const Deg0 = styled.img`
   transform: translate(151px);
@@ -200,25 +198,24 @@ export const Deg0 = styled.img`
   position: absolute;
   border-radius: 50%;
   /* filter: invert(100%); */
-  
-  @media screen and (max-width: 901px){
+
+  @media screen and (max-width: 901px) {
     transform: translate(126px);
     width: 70px;
-    height: 70px
+    height: 70px;
   }
-  
-  @media screen and (max-width: 768px){
+
+  @media screen and (max-width: 768px) {
     transform: translate(101px);
     width: 60px;
-    height: 60px
+    height: 60px;
   }
-  
-  &:hover{
+
+  &:hover {
     /* background-color: #8f8393; */
     /* filter: invert(0.9); */
     filter: drop-shadow(20px 16px 10px black);
     transition: filter 0.5s ease;
-    
   }
 `;
 
@@ -229,24 +226,23 @@ export const Deg60 = styled.img`
   position: absolute;
   /* ${({ lightBg }) => lightBg && `filter : invert(100%)`}; */
 
-  @media screen and (max-width: 901px){
+  @media screen and (max-width: 901px) {
     transform: rotate(61deg) translate(126px) rotate(-61deg);
     width: 70px;
     height: 70px;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     transform: rotate(61deg) translate(101px) rotate(-61deg);
     width: 60px;
-    height: 60px
+    height: 60px;
   }
 
-  &:hover{
+  &:hover {
     /* background-color: #8f8393; */
     /* filter: invert(0.9); */
     filter: drop-shadow(20px 16px 10px #212121);
     transition: filter 0.5s ease;
-    
   }
 `;
 
@@ -257,125 +253,118 @@ export const Deg120 = styled.img`
   position: absolute;
   /* filter: invert(100%); */
 
-  @media screen and (max-width: 901px){
+  @media screen and (max-width: 901px) {
     transform: rotate(121deg) translate(126px) rotate(-121deg);
     width: 70px;
-    height: 70px
+    height: 70px;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     transform: rotate(121deg) translate(101px) rotate(-121deg);
     width: 60px;
-    height: 60px
+    height: 60px;
   }
 
-  &:hover{
+  &:hover {
     /* background-color: #8f8393; */
     /* filter: invert(0.9); */
     filter: drop-shadow(20px 16px 10px black);
     transition: filter 0.5s ease;
-    
   }
- `;
+`;
 
- export const Deg180 = styled.img`
-   transform: rotate(181deg) translate(151px) rotate(-181deg);
-   width: 80px;
-   height: 80px;
-   position: absolute;
+export const Deg180 = styled.img`
+  transform: rotate(181deg) translate(151px) rotate(-181deg);
+  width: 80px;
+  height: 80px;
+  position: absolute;
 
-   @media screen and (max-width: 901px){
+  @media screen and (max-width: 901px) {
     transform: rotate(181deg) translate(126px) rotate(-181deg);
     width: 70px;
-    height: 70px
+    height: 70px;
   }
 
-   @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     transform: rotate(181deg) translate(101px) rotate(-181deg);
     width: 60px;
-    height: 60px
+    height: 60px;
   }
 
-  &:hover{
+  &:hover {
     /* background-color: #8f8393; */
     /* filter: invert(0.9); */
     filter: drop-shadow(20px 16px 10px black);
     transition: filter 0.5s ease;
-    
   }
- `;
+`;
 
- export const Deg240 = styled.img`
-   transform: rotate(241deg) translate(151px) rotate(-241deg);
-   width: 80px;
-   height: 80px;
-   position: absolute;
+export const Deg240 = styled.img`
+  transform: rotate(241deg) translate(151px) rotate(-241deg);
+  width: 80px;
+  height: 80px;
+  position: absolute;
 
-   @media screen and (max-width: 901px){
+  @media screen and (max-width: 901px) {
     transform: rotate(241deg) translate(126px) rotate(-241deg);
     width: 70px;
-    height: 70px
+    height: 70px;
   }
 
-   @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     transform: rotate(241deg) translate(101px) rotate(-241deg);
     width: 60px;
-    height: 60px
+    height: 60px;
   }
 
-  &:hover{
+  &:hover {
     /* background-color: #8f8393; */
     /* filter: invert(0.9); */
     filter: drop-shadow(20px 16px 10px black);
     transition: filter 0.5s ease;
-    
   }
- `;
+`;
 
- export const Deg300 = styled.img`
-   transform: rotate(301deg) translate(151px) rotate(-301deg);
-   width: 80px;
-   height: 80px;
-   position: absolute;
-   /* filter: invert(100%); */
+export const Deg300 = styled.img`
+  transform: rotate(301deg) translate(151px) rotate(-301deg);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  /* filter: invert(100%); */
 
-   @media screen and (max-width: 901px){
+  @media screen and (max-width: 901px) {
     transform: rotate(301deg) translate(126px) rotate(-301deg);
     width: 70px;
-    height: 70px
+    height: 70px;
   }
 
-   @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     transform: rotate(301deg) translate(101px) rotate(-301deg);
     width: 60px;
-    height: 60px
+    height: 60px;
   }
 
-  &:hover{
+  &:hover {
     /* background-color: #8f8393; */
     /* filter: invert(0.9); */
     filter: drop-shadow(20px 16px 10px black);
     transition: filter 0.5s ease;
-    
   }
- `;
+`;
 
 //  Ends //////////////////////////////////
 
 export const Anchor = styled.a`
   text-decoration: none;
-  
 
   &:hover {
-    
   }
 `;
-
 
 // export const SideBar = styled.div`
 //   width: 80px;
 //   height: 100vh;
-//   background: linear-gradient(to right, #948f97, #f6ffff); 
+//   background: linear-gradient(to right, #948f97, #f6ffff);
 //   position: absolute;
 //   top: 80px;
 //   display: flex;

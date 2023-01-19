@@ -24,15 +24,18 @@ export const ProjectInfoRow = styled.div`
 
   @media screen and (max-width: 768px) {
     margin: 0;
+
   }
 `;
 
 export const Project = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
 `;
 
 export const ProjectDesc = styled.div`
+  display: flex;
 
 `;
 
