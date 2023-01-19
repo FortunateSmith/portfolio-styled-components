@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const ProjectSection = styled.div`
-  margin: 50px;
-  padding: 80px;
+  /* margin: 50px; */
+  padding: 160px 0;
+  background: #f6ffff;
+  
 
   @media screen {
     display: flex;
@@ -32,6 +34,8 @@ export const Project = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
 `;
 
 export const ProjectDesc = styled.div`

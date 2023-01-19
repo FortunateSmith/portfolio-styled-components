@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Button } from "../../globalStyles";
 import Logo from "../../images/Logo.png";
-import { animateScroll as scroll, Element } from "react-scroll";
+import { animateScroll as scroll} from "react-scroll";
 import {
   Nav,
   NavbarContainer,
