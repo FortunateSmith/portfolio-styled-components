@@ -178,7 +178,7 @@ export const CircleWrapper = styled.div`
     width: 201px;
     height: 201px;
     padding-left: 5%;
-    margin-right: 20%;
+    margin-right: 5em;
     justify-content: center;
   }
 
