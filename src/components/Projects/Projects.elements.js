@@ -4,6 +4,8 @@ export const ProjectSection = styled.div`
   /* margin: 50px; */
   padding: 160px 0;
   background: #f6ffff;
+  display: flex;
+  align-items: center;
   
 
   @media screen {
