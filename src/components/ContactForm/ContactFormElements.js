@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const FormSection = styled.div`
   color: "#f6ffff";
-  padding: 160px 0;
+  padding-top: 120px;
+  padding-bottom: 160px;
   height: 100vh;
   background: ${({ lightBg }) => (lightBg ? "#f6ffff" : "#303333")};
   display: flex;
