@@ -29,7 +29,7 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   headline: "Skills",
-  description: "Since autumn 2021, when my new journey began, I have worked with many front and backend tools, technologies and languages including: JavaScript, HTML, CSS, SASS, SQL, NodeJS, React, Gatsby, Ajax, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, PostgreSQL and Git.",
+  description: "Languages, libraries, frameworks and databases including: JavaScript, HTML, CSS, SASS, SQL, NodeJS, React, Gatsby, Ajax, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, PostgreSQL and Git.",
   buttonLabel: "Contact",
   img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
   start: "",
