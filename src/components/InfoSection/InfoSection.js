@@ -56,10 +56,11 @@ const InfoSection = ({
   return (
     <>
       <InfoSec lightBg={lightBg}>
-        <Container id={id}>
+        <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn stationary={stationary}>
               <TextWrapper
+              id={id} 
                 lightBorder={lightBorder}
                 borderShadow={borderShadow}
               >

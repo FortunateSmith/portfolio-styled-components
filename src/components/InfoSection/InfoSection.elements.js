@@ -3,19 +3,24 @@ import styled from "styled-components";
 export const InfoSec = styled.div`
   color: "#f6ffff";
   padding: 160px 0;
-  height: 100vh;
+  height: 90vh;
   background: ${({ lightBg }) => (lightBg ? "#f6ffff" : "#303333")};
   display: flex;
   align-items: center;
 
   @media screen and (max-width: 1000px) {
     height: auto;
-    padding-top: 2em;
+    padding: 2em 0;
   }
 
   @media screen and (max-width: 768px) {
     height: auto;
-    padding: 5em;
+    padding: none;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: auto;
+    padding: none;
   }
 `;
 
@@ -132,6 +137,10 @@ export const Resume = styled.div`
 
     border-color: #2cf4ff;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 50px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -182,10 +191,10 @@ export const CircleWrapper = styled.div`
     justify-content: center;
   }
 
-  @media screen and (max-width: 396px) {
+  @media screen and (max-width: 480px) {
     width: 201px;
     height: 201px;
-    padding-right: 50%;
+    padding-right: 25%;
     margin: 0 auto;
     justify-content: center;
   }

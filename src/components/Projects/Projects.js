@@ -30,9 +30,9 @@ const Projects = ({
 }) => {
   return (
     <ProjectSection>
-      <Container id={id}>
+      <Container >
         <Fade>
-          <TextWrapper>
+          <TextWrapper id={id}>
             <Heading>{headline}</Heading>
           </TextWrapper>
           <ProjectInfoRow>
