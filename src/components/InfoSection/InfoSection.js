@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../../globalStyles";
 // import { Link } from "react-router-dom";
 // import ReactImg from "../../images/techLogos/React.png"
-import { Fade, Roll, Slide } from "react-reveal";
+import { Slide } from "react-reveal";
 
 import {
   InfoSec,
