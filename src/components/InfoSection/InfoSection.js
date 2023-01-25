@@ -64,13 +64,13 @@ const InfoSection = ({
                 lightBorder={lightBorder}
                 borderShadow={borderShadow}
               >
-                <Fade>
+                {/* <Fade> */}
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                   <Heading lightText={lightText}>{headline}</Heading>
                   <SubTitle lightTextDesc={lightTextDesc}>
                     {description}
                   </SubTitle>
-                </Fade>
+                {/* </Fade> */}
                 {viewButton ? (
                   <Slide left>
                     <Anchor href="https://resume.creddle.io/resume/axbddmzuru6">
@@ -84,23 +84,23 @@ const InfoSection = ({
               {circle ? (
                 <CircleWrapper startCircle={startCircle}>
                   {/* Roll from react-reveal lib */}
-                  <Fade>
-                    <Roll right>
+                  {/* <Fade> */}
+                    {/* <Roll right> */}
                       <Deg0 src={img0} />
                       <Deg60 src={img60} />
                       <Deg120 src={img120} />
                       <Deg180 src={img180} />
                       <Deg240 src={img240} />
                       <Deg300 src={img300} />
-                    </Roll>
-                  </Fade>
+                    {/* </Roll> */}
+                  {/* </Fade> */}
                 </CircleWrapper>
               ) : (
                 <ImageWrapper start={start}>
                   {/* Fade from react-reveal lib */}
-                  <Fade>
+                  {/* <Fade> */}
                     <Img src={img} alt={alt} />
-                  </Fade>
+                  {/* </Fade> */}
                 </ImageWrapper>
               )}
             </InfoColumn>

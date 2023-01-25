@@ -1,4 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+///////////// Animations ////////////////
+
+const spinAnimation = keyframes`
+    from {transform: rotate(225deg)}
+    to {transform: rotate(360deg)} 
+`;
+
+const fadeAnimation = keyframes`
+  0% { opacity: 0 }
+  /* 50% { opacity: 0.3 } */
+  100% { opacity: 1 }
+`
 
 export const InfoSec = styled.div`
   color: "#f6ffff";
@@ -60,6 +73,7 @@ export const InfoColumn = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding: 60px 20px 20px 60px;
+  animation: ${fadeAnimation} 1s ease-in;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
@@ -92,7 +106,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
-  text-decoration: underline #1a1022 1px; 
+  text-decoration: underline #1a1022 1px;
   @media screen and (max-width: 768px) {
     text-align: center;
     font-size: 64px;
@@ -149,6 +163,7 @@ export const ImageWrapper = styled.div`
   /* justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")}; */
   justify-content: center;
   align-items: center;
+  animation: ${fadeAnimation} 1s ease-in;
 `;
 
 export const Img = styled.img`
@@ -168,6 +183,9 @@ export const Img = styled.img`
 `;
 
 // Circle CSS ///////////////////////////////////////////////
+
+
+
 export const CircleWrapper = styled.div`
   width: 301px;
   height: 301px;
@@ -177,6 +195,7 @@ export const CircleWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding-left: 20%;
+  animation: ${spinAnimation} 1200ms ease-in-out, ${fadeAnimation} 1s ease-in;
 
   @media screen and (max-width: 991px) {
     width: 251px;
