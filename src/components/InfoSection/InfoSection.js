@@ -60,16 +60,14 @@ const InfoSection = ({
           <InfoRow imgStart={imgStart}>
             <InfoColumn stationary={stationary}>
               <TextWrapper
-              id={id} 
+                id={id}
                 lightBorder={lightBorder}
                 borderShadow={borderShadow}
               >
                 {/* <Fade> */}
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
-                  <Heading lightText={lightText}>{headline}</Heading>
-                  <SubTitle lightTextDesc={lightTextDesc}>
-                    {description}
-                  </SubTitle>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
                 {/* </Fade> */}
                 {viewButton ? (
                   <Slide left>
@@ -85,21 +83,21 @@ const InfoSection = ({
                 <CircleWrapper startCircle={startCircle}>
                   {/* Roll from react-reveal lib */}
                   {/* <Fade> */}
-                    {/* <Roll right> */}
-                      <Deg0 src={img0} />
-                      <Deg60 src={img60} />
-                      <Deg120 src={img120} />
-                      <Deg180 src={img180} />
-                      <Deg240 src={img240} />
-                      <Deg300 src={img300} />
-                    {/* </Roll> */}
+                  {/* <Roll right> */}
+                  <Deg0 src={img0} />
+                  <Deg60 src={img60} />
+                  <Deg120 src={img120} />
+                  <Deg180 src={img180} />
+                  <Deg240 src={img240} />
+                  <Deg300 src={img300} />
+                  {/* </Roll> */}
                   {/* </Fade> */}
                 </CircleWrapper>
               ) : (
                 <ImageWrapper start={start}>
                   {/* Fade from react-reveal lib */}
                   {/* <Fade> */}
-                    <Img src={img} alt={alt} />
+                  <Img src={img} alt={alt} />
                   {/* </Fade> */}
                 </ImageWrapper>
               )}

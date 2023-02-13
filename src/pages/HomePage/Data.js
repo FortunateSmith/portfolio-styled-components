@@ -14,8 +14,6 @@ export const homeObjOne = {
   start: "false",
   alt: "Image",
   viewButton: true,
-  socialIconLI: require("../../images/socialLogos/LI-In-Bug.png"),
-  socialIconGit: require("../../images/socialLogos/github-mark.png"),
   stationary: true
 };
 

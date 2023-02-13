@@ -5,12 +5,11 @@ import { InfoSection, Navbar, Footer, ContactForm, Projects } from "../../compon
 import {
   homeObjOne,
   homeObjTwo,
-  // homeObjThree,
   homeObjFour,
-  footerObj,
 } from "./Data";
 
 import { homeObjFive } from "./ProjectData";
+import { footerObj } from "../../components/footer/FooterData";
 
 const Home = () => {
   return (

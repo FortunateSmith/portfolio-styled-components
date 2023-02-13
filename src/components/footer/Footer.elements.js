@@ -4,9 +4,6 @@ import styled from "styled-components";
 export const Foot = styled.div`
   background: ${({bgColor}) => (bgColor ? "#1b1d1d" : "#f6effc")} ;
   height: 80px;
-  /* position: sticky;
-  bottom: 0; */
-
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -19,7 +16,7 @@ export const FooterContainer = styled.div`
   color: ${({textColor}) => (textColor ? "#f6effc" : "#303333")};
   justify-content: space-between;
   padding: 0 5%;
-  width: 90%;
+  width: 100%;
 
 `
 
@@ -28,4 +25,15 @@ export const FooterIconBox = styled.div`
   display: flex;
   justify-content: flex-end;
   opacity: 1;
+`
+
+export const ThumbnailWrapper = styled.div`
+  display: flex;
+  min-width: 150px;
+  justify-content: flex-end;
+`
+export const Thumbnail = styled.img`
+padding: 20%;
+width: 50px;
+height: 50px;
 `
