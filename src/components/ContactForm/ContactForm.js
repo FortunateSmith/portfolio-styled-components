@@ -17,7 +17,7 @@ import {
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/74235d60-969d-11ed-a003-6f0b76086b1c"; // TODO - fill on the later step
 
-const ContactForm = () => {
+const ContactForm = ({primary}) => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
     setTimeout(() => {
@@ -35,7 +35,7 @@ const ContactForm = () => {
   // }
 
   return (
-    <FormSection>
+    <FormSection >
       <Form
         action={FORM_ENDPOINT}
         onSubmit={handleSubmit}
@@ -65,7 +65,7 @@ const ContactForm = () => {
             name="message"
           />
 
-          <Button fontBig type="submit">Send</Button>
+          <Button fontBig primary={primary} type="submit">Send</Button>
         </TextSubmit>
           {submitted ? <PopUp className="text-2xl">Thank you!</PopUp> : <PopUp />}
           {submitted ? <PopUp className="text-2xl">I will be in touch soon.</PopUp> : <PopUp />}

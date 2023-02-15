@@ -10,6 +10,7 @@ import {
 
 import { homeObjFive } from "./ProjectData";
 import { footerObj } from "../../components/footer/FooterData";
+import { contactObj } from "../../components/ContactForm/ContactFormData";
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
       <InfoSection {...homeObjFour} />
       <InfoSection {...homeObjTwo} />
       <Projects  {...homeObjFive}/>
-      <ContactForm/>
+      <ContactForm {...contactObj}/>
       <Footer {...footerObj}/>
     </>
   );
