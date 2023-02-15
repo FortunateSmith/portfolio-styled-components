@@ -8,6 +8,7 @@ import {
   InfoColumn,
   TextWrapper,
   SubTitle,
+  Anchor,
 } from "../InfoSection/InfoSection.elements";
 import {
   ProjectSection,
@@ -30,7 +31,7 @@ const Projects = ({
 }) => {
   return (
     <ProjectSection>
-      <Container >
+      <Container>
         <Fade>
           <TextWrapper id={id}>
             <Heading>{headline}</Heading>
@@ -38,19 +39,23 @@ const Projects = ({
           <ProjectInfoRow>
             <InfoColumn>
               <Project>
-                <ProjectTitle>Tool Swap</ProjectTitle>
-                <ImageWrapper>
-                  <Img src={img} />
-                </ImageWrapper>
+                <Anchor href="https://github.com/FortunateSmith/ToolSwap">
+                  <ProjectTitle>Tool Swap</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img} />
+                  </ImageWrapper>
+                </Anchor>
                 <SubTitle>{description}</SubTitle>
               </Project>
             </InfoColumn>
             <InfoColumn>
               <Project>
-                <ProjectTitle>Scheduler</ProjectTitle>
-                <ImageWrapper>
-                  <Img src={img2} />
-                </ImageWrapper>
+                <Anchor href="https://github.com/FortunateSmith/scheduler">
+                  <ProjectTitle>Scheduler</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img2} />
+                  </ImageWrapper>
+                </Anchor>
                 <SubTitle>{description2}</SubTitle>
               </Project>
             </InfoColumn>
@@ -58,19 +63,23 @@ const Projects = ({
           <ProjectInfoRow>
             <InfoColumn>
               <Project>
-                <ProjectTitle>Tweeter</ProjectTitle>
-                <ImageWrapper>
-                  <Img src={img3} />
-                </ImageWrapper>
+                <Anchor href="https://github.com/FortunateSmith/tweeter">
+                  <ProjectTitle>Tweeter</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img3} />
+                  </ImageWrapper>
+                </Anchor>
                 <SubTitle>{description3}</SubTitle>
               </Project>
             </InfoColumn>
             <InfoColumn>
               <Project>
-                <ProjectTitle>Tiny App</ProjectTitle>
-                <ImageWrapper>
-                  <Img src={img4} />
-                </ImageWrapper>
+                <Anchor href="https://github.com/FortunateSmith/tinyapp">
+                  <ProjectTitle>Tiny App</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img4} />
+                  </ImageWrapper>
+                </Anchor>
                 <SubTitle>{description4}</SubTitle>
               </Project>
             </InfoColumn>
