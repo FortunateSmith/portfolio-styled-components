@@ -129,7 +129,7 @@ export const SubTitle = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 28px;
     text-align: center;
-    line-height: 1.2
+    line-height: 1.3;
     
   }
 `;
