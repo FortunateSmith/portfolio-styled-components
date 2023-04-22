@@ -120,8 +120,6 @@ export const SubTitle = styled.p`
   width: 290px;
   margin-bottom: 35px;
   margin-top: 35px;
-  /* border: solid 2px;
-  border-radius: 5%; */
   font-size: 18px;
   line-height: 24px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? "#f6ffff" : "#1a1022")};
@@ -394,19 +392,3 @@ export const Anchor = styled.a`
   &:hover {
   }
 `;
-
-// export const SideBar = styled.div`
-//   width: 80px;
-//   height: 100vh;
-//   background: linear-gradient(to right, #948f97, #f6ffff);
-//   position: absolute;
-//   top: 80px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-evenly;
-
-//   @media screen and (max-width: 768px) {
-//     background: #f6ffff;
-//   }
-// `
-
