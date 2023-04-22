@@ -8,7 +8,8 @@ export const homeObjOne = {
   lightText: false,
   lightTextDesc: false,
   headline: "Liam Smith",
-  description: "I am a certified frontend & backend developer based in Toronto, Canada. I use design and data to help people connect.",
+  description:
+    "I am a certified frontend & backend developer based in Toronto, Canada. I use design and data to help people connect.",
   resumeLabel: "See my resume",
   img: require("../../images/Headshot-Transparent-BG.png"),
   start: "false",
@@ -28,7 +29,8 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   headline: "Skills",
-  description: "Languages, libraries, frameworks and databases include: JavaScript, HTML, CSS, React, SASS, SQL, NodeJS, Gatsby, Ajax, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, PostgreSQL and Git.",
+  description:
+    "Languages, libraries, frameworks and databases include: JavaScript, HTML, CSS, React, SASS, SQL, NodeJS, Gatsby, Ajax, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, PostgreSQL and Git.",
   buttonLabel: "Contact",
   img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
   start: "",
@@ -45,31 +47,6 @@ export const homeObjTwo = {
   justify: true,
 };
 
-// export const homeObjThree = {
-//   id: "backend",
-//   lightBg: true,
-//   primary: false,
-//   imgStart: "",
-//   lightTopLine: false,
-//   topLine: "",
-//   lightText: false,
-//   lightTextDesc: false,
-//   headline: "BackEnd",
-//   description: "Tech skills I have been developing to manage requests, responses and data on the backend.",
-//   buttonLabel: "",
-//   img: "",
-//   start: "",
-//   alt: "Image",
-//   viewButton: false,
-//   circle: true,
-//   startCircle: false,
-//   img0: require("../../images/techLogos/backend/JavaScript.png"),
-//   img60: require("../../images/techLogos/backend/NodeJS.png"),
-//   img120: require("../../images/techLogos/frontend/Sass.png"),
-//   img180: require("../../images/techLogos/frontend/Gatsby_Monogram.png"),
-//   img240: require("../../images/techLogos/frontend/bootstrap-logo.png"),
-//   img300: require("../../images/techLogos/frontend/jquery.png")
-// };
 export const homeObjFour = {
   id: "about",
   lightBg: true,
@@ -80,7 +57,8 @@ export const homeObjFour = {
   lightText: false,
   lightTextDesc: false,
   headline: "About Me",
-  description: "I am a developer, musician, nature enthusiast and humanist with a broad range of interests. I aim to merge arts, development and community, strengthening real world networks and contributing to positive social change. I believe that technology must improve the lives of average people and be used to flatten society.",
+  description:
+    "I am a developer, musician, nature enthusiast and humanist with a broad range of interests. I aim to merge arts, development and community, strengthening real world networks and contributing to positive social change. I believe that technology must improve the lives of average people and be used to flatten society.",
   buttonLabel: "",
   img: require("../../images/Fairy-Lake.jpeg"),
   start: "",
@@ -89,10 +67,7 @@ export const homeObjFour = {
   justify: false,
 };
 
-
-
-
 export const footerObj = {
   bgColor: true,
-  textColor: true
-}
+  textColor: true,
+};
