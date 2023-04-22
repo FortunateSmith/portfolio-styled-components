@@ -59,3 +59,17 @@ export const ProjectTitle = styled.p`
     text-align: center;
   }
 `;
+
+
+export const ProjectHeading = styled.h1`
+  margin-bottom: 24px;
+  /* padding-left: 10px; */
+  font-size: 48px;
+  line-height: 1.1;
+  color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
+  text-decoration: underline #1a1022 1px;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 64px;
+  }
+`;

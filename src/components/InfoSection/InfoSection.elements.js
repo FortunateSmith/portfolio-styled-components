@@ -74,7 +74,7 @@ export const InfoColumn = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding: 60px 20px 20px 60px;
+  padding: 60px 20px 20px 40px;
   animation: ${fadeAnimation} 1s ease-in;
 
   @media screen and (max-width: 768px) {
@@ -196,7 +196,7 @@ export const CircleWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20%;
+  /* padding-left: 20%; */
   animation: ${spinAnimation} 1200ms ease-in-out, ${fadeAnimation} 1s ease-in;
 
   @media screen and (max-width: 991px) {

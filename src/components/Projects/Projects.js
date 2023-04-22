@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "../../globalStyles";
 import { Fade } from "react-reveal";
 import {
-  Heading,
   ImageWrapper,
   Img,
   InfoColumn,
@@ -15,6 +14,7 @@ import {
   ProjectInfoRow,
   Project,
   ProjectTitle,
+  ProjectHeading,
 } from "./Projects.elements";
 
 const Projects = ({
@@ -34,7 +34,7 @@ const Projects = ({
       <Container>
         <Fade>
           <TextWrapper id={id}>
-            <Heading>{headline}</Heading>
+            <ProjectHeading>{headline}</ProjectHeading>
           </TextWrapper>
           <ProjectInfoRow>
             <InfoColumn>
