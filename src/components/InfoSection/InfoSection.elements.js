@@ -44,6 +44,7 @@ export const InfoRow = styled.div`
   /* align-items: baseline; */
   /* flips which side image is on */
   flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+  
 
   @media screen and (max-width: 768px) {
     margin: 0;
@@ -52,6 +53,7 @@ export const InfoRow = styled.div`
 
 export const InfoColumn = styled.div`
   display: flex;
+  justify-content: ${({ justify }) => (justify ? "start" : "center")};
   align-items: center;
   margin-bottom: 15px;
   padding-right: 15px;

@@ -52,13 +52,14 @@ const InfoSection = ({
   img300,
   startCircle,
   stationary,
+  justify
 }) => {
   return (
     <>
       <InfoSec lightBg={lightBg}>
         <Container>
           <InfoRow imgStart={imgStart}>
-            <InfoColumn stationary={stationary}>
+            <InfoColumn stationary={stationary} justify={justify}>
               <TextWrapper
                 id={id}
                 lightBorder={lightBorder}

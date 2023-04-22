@@ -14,7 +14,8 @@ export const homeObjOne = {
   start: "false",
   alt: "Image",
   viewButton: true,
-  stationary: true
+  stationary: true,
+  justify: true,
 };
 
 export const homeObjTwo = {
@@ -40,7 +41,8 @@ export const homeObjTwo = {
   img120: require("../../images/techLogos/frontend/Sass.png"),
   img180: require("../../images/techLogos/frontend/Gatsby_Monogram.png"),
   img240: require("../../images/techLogos/frontend/bootstrap-logo.png"),
-  img300: require("../../images/techLogos/backend/JavaScript.png")
+  img300: require("../../images/techLogos/backend/JavaScript.png"),
+  justify: true,
 };
 
 // export const homeObjThree = {
@@ -84,6 +86,7 @@ export const homeObjFour = {
   start: "",
   alt: "Image",
   viewButton: false,
+  justify: false,
 };
 
 
