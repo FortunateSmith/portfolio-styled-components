@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../../globalStyles";
 // import { Link } from "react-router-dom";
 // import ReactImg from "../../images/techLogos/React.png"
-import { Slide } from "react-reveal";
+import { Slide, Roll, Fade } from "react-reveal";
 
 import {
   InfoSec,
@@ -81,24 +81,24 @@ const InfoSection = ({
             <InfoColumn>
               {circle ? (
                 <CircleWrapper startCircle={startCircle}>
-                  {/* Roll from react-reveal lib */}
-                  {/* <Fade> */}
-                  {/* <Roll right> */}
+                  {/* Roll from react-reveal lib0 */}
+                  <Fade>
+                  <Roll right>
                   <Deg0 src={img0} />
                   <Deg60 src={img60} />
                   <Deg120 src={img120} />
                   <Deg180 src={img180} />
                   <Deg240 src={img240} />
                   <Deg300 src={img300} />
-                  {/* </Roll> */}
-                  {/* </Fade> */}
+                  </Roll>
+                  </Fade>
                 </CircleWrapper>
               ) : (
                 <ImageWrapper start={start}>
                   {/* Fade from react-reveal lib */}
-                  {/* <Fade> */}
+                  <Fade>
                   <Img src={img} alt={alt} />
-                  {/* </Fade> */}
+                  </Fade>
                 </ImageWrapper>
               )}
             </InfoColumn>
