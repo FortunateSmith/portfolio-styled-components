@@ -80,6 +80,7 @@ export const TextWrapper = styled.div`
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
     padding-left: 0;
+    padding-right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,26 +197,27 @@ export const CircleWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-left: 20%; */
+  padding-right: 80px;
   animation: ${spinAnimation} 1200ms ease-in-out, ${fadeAnimation} 1s ease-in;
 
   @media screen and (max-width: 991px) {
     width: 251px;
     height: 251px;
+    /* padding: none */
   }
 
   @media screen and (max-width: 768px) {
     width: 201px;
     height: 201px;
-    padding-left: 5%;
+    padding-left: 60px;
     margin-right: 5em;
     justify-content: center;
   }
 
   @media screen and (max-width: 480px) {
-    width: 151px;
-    height: 151px;
-    padding-right: 25%;
+    /* width: 151px;
+    height: 151px; */
+    padding-left: 25px;
     margin: 0 auto;
     justify-content: center;
   }

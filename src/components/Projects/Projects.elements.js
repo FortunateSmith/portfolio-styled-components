@@ -38,6 +38,12 @@ export const Project = styled.div`
     align-items: center;
     padding-right: 40px;
     padding-left: 40px;
+
+    @media screen and (max-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+
+  }
 `;
 
 export const ProjectDesc = styled.div`
