@@ -11,7 +11,7 @@ export const homeObjFive = {
   description: "Web CRUD app for scheduling a neighbourhood tool rental built with Postgres, Express, React, Node.",
   description2: "An interview scheduling app built with Front-end: Postgres, Express, React, Node and tested with Cypress, Jest, StoryBook",
   description3: "A Twitter clone built with jQuery, HTML5, and CSS.",
-  description4: "An app allowing users shorten long URLs (similar to bit.ly). TinyApp is built with Node and Express. NodeJS, Express, EJS",
+  description4: "An app allowing users to shorten long URLs (similar to bit.ly). TinyApp is built with Node and Express. NodeJS, Express, EJS",
   buttonLabel: "",
   img: require("../../images/ToolSwap.png"),
   img2: require("../../images/Scheduler.png"),
