@@ -54,8 +54,6 @@ export const ProjectDesc = styled.div`
 export const ProjectTitle = styled.p`
   width: 290px;
   margin-bottom: 35px;
-  /* border: solid 2px;
-  border-radius: 5%; */
   font-size: 32px;
   line-height: 32px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? "#f6ffff" : "#1a1022")};
@@ -71,7 +69,7 @@ export const ProjectTitle = styled.p`
 
 export const ProjectHeading = styled.h1`
   margin-bottom: 24px;
-  /* padding-left: 10px; */
+  padding-left: 12px;
   font-size: 48px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
