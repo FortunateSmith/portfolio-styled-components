@@ -61,7 +61,7 @@ export const ProjectTitle = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 32px;
     margin-left: 17px;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
   }
 `;
