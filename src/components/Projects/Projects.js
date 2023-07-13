@@ -39,6 +39,30 @@ const Projects = ({
           <ProjectInfoRow>
             <InfoColumn>
               <Project>
+                <Anchor href="https://studiopothos.com">
+                  <ProjectTitle>Studio Pothos</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img3} />
+                  </ImageWrapper>
+                </Anchor>
+                <SubTitle>{description3}</SubTitle>
+              </Project>
+            </InfoColumn>
+            <InfoColumn>
+              <Project>
+                <Anchor href="https://confectionsbymilon-backt.ca">
+                  <ProjectTitle>Confections by Milon Backt</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img4} />
+                  </ImageWrapper>
+                </Anchor>
+                <SubTitle>{description4}</SubTitle>
+              </Project>
+            </InfoColumn>
+          </ProjectInfoRow>
+          <ProjectInfoRow>
+            <InfoColumn>
+              <Project>
                 <Anchor href="https://github.com/FortunateSmith/ToolSwap">
                   <ProjectTitle>Tool Swap</ProjectTitle>
                   <ImageWrapper>
@@ -57,30 +81,6 @@ const Projects = ({
                   </ImageWrapper>
                 </Anchor>
                 <SubTitle>{description2}</SubTitle>
-              </Project>
-            </InfoColumn>
-          </ProjectInfoRow>
-          <ProjectInfoRow>
-            <InfoColumn>
-              <Project>
-                <Anchor href="https://github.com/FortunateSmith/tweeter">
-                  <ProjectTitle>Tweeter</ProjectTitle>
-                  <ImageWrapper>
-                    <Img src={img3} />
-                  </ImageWrapper>
-                </Anchor>
-                <SubTitle>{description3}</SubTitle>
-              </Project>
-            </InfoColumn>
-            <InfoColumn>
-              <Project>
-                <Anchor href="https://github.com/FortunateSmith/tinyapp">
-                  <ProjectTitle>Tiny App</ProjectTitle>
-                  <ImageWrapper>
-                    <Img src={img4} />
-                  </ImageWrapper>
-                </Anchor>
-                <SubTitle>{description4}</SubTitle>
               </Project>
             </InfoColumn>
           </ProjectInfoRow>

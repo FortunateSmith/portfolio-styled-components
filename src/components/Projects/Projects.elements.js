@@ -52,7 +52,7 @@ export const ProjectDesc = styled.div`
 `;
 
 export const ProjectTitle = styled.p`
-  width: 290px;
+  width: 100%;
   margin-bottom: 35px;
   font-size: 32px;
   line-height: 32px;
