@@ -73,15 +73,22 @@ export const ProjectTitle = styled.p`
 `;
 
 
-export const ProjectHeading = styled.h1`
+export const ProjectHeading = styled.h2`
   margin-bottom: 24px;
-  padding-left: 16px;
+  padding-left: 15px;
   font-size: 48px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
   text-decoration: underline #1a1022 1px;
+
+
+  @media screen and (max-width: 840px) {
+    padding-left: 9px;
+  }
+
   @media screen and (max-width: 768px) {
     text-align: center;
     font-size: 64px;
+    /* padding-left: 9px; */
   }
 `;
