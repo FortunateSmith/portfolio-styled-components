@@ -36,12 +36,16 @@ export const Project = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 40px;
+    /* padding-right: 40px;
     padding-left: 40px;
+    padding-bottom: 40px; */
+    padding: 40px;
 
     @media screen and (max-width: 768px) {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
   }
 `;
