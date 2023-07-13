@@ -116,8 +116,9 @@ export const Heading = styled.h1`
   }
 `;
 
+// Description section
 export const SubTitle = styled.p`
-  width: 290px;
+  width: 100%;
   margin-bottom: 35px;
   margin-top: 35px;
   font-size: 18px;
