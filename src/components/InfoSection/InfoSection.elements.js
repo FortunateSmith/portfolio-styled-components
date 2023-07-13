@@ -110,7 +110,10 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
-  text-decoration: underline #1a1022 1px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #1a1022;
+
   @media screen and (max-width: 768px) {
     text-align: center;
     font-size: 64px;
