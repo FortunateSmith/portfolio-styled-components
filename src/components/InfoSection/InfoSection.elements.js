@@ -171,6 +171,7 @@ export const ImageWrapper = styled.div`
 
 export const Img = styled.img`
   padding-right: 0;
+  padding-top: 20px;
   border: 0;
   max-width: 100%;
   vertical-align: middle;
