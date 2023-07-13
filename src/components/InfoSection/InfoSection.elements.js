@@ -15,8 +15,8 @@ const fadeAnimation = keyframes`
 
 export const InfoSec = styled.div`
   color: "#f6ffff";
-  padding: 160px 0;
-  height: 100vh;
+  padding: 40px 0;
+  height: 80vh;
   background: ${({ lightBg }) => (lightBg ? "#f6ffff" : "#303333")};
   display: flex;
   align-items: center;

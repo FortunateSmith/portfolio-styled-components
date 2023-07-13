@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectSection = styled.div`
   /* margin: 50px; */
-  padding: 160px 0;
+  padding: 40px 0;
   background: #f6ffff;
   display: flex;
   align-items: center;
@@ -60,7 +60,7 @@ export const ProjectTitle = styled.p`
 
   @media screen and (max-width: 768px) {
     font-size: 32px;
-    margin-left: 17px;
+    /* margin-left: 17px; */
     font-weight: bold;
     text-align: center;
   }
@@ -69,7 +69,7 @@ export const ProjectTitle = styled.p`
 
 export const ProjectHeading = styled.h1`
   margin-bottom: 24px;
-  padding-left: 12px;
+  /* padding-left: 12px; */
   font-size: 48px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
