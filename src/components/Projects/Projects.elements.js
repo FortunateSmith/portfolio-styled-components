@@ -48,19 +48,25 @@ export const Project = styled.div`
 
 export const ProjectDesc = styled.div`
   display: flex;
-
 `;
 
 export const ProjectTitle = styled.p`
   width: 100%;
+  /* inline-size: min-content;  */
+  white-space: nowrap;
   margin-bottom: 35px;
   font-size: 32px;
   line-height: 32px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? "#f6ffff" : "#1a1022")};
 
+  @media screen and (max-width: 1120px) {
+    white-space: normal;
+  }
+
   @media screen and (max-width: 768px) {
     font-size: 32px;
     /* margin-left: 17px; */
+    white-space: normal;
     font-weight: bold;
     text-align: center;
   }
@@ -69,7 +75,7 @@ export const ProjectTitle = styled.p`
 
 export const ProjectHeading = styled.h1`
   margin-bottom: 24px;
-  /* padding-left: 12px; */
+  padding-left: 16px;
   font-size: 48px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
