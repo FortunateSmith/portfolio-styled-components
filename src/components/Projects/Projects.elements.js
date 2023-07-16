@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProjectSection = styled.div`
   /* margin: 50px; */
   padding: 40px 0;
-  background: #f6ffff;
+  background: #fffbfd;
   display: flex;
   align-items: center;
   
@@ -61,7 +61,7 @@ export const ProjectTitle = styled.p`
   margin-bottom: 35px;
   font-size: 32px;
   line-height: 32px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#f6ffff" : "#1a1022")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#fffbfd" : "#1a1022")};
 
   @media screen and (max-width: 1120px) {
     white-space: normal;
@@ -82,7 +82,7 @@ export const ProjectHeading = styled.h2`
   padding-left: 15px;
   font-size: 48px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
+  color: ${({ lightText }) => (lightText ? "#fffbfd" : "#1a1022")};
   text-decoration: underline #1a1022 1px;
 
 

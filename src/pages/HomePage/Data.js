@@ -9,7 +9,7 @@ export const homeObjOne = {
   lightTextDesc: false,
   headline: "Liam Smith",
   description:
-    "I am a certified fullstack developer based in Toronto, Canada. I use design and data to help people connect.",
+    "I am a fullstack developer based in Toronto, Canada. I use design and data to help people connect.",
   resumeLabel: "See my resume",
   img: require("../../images/Headshot-Transparent-BG.png"),
   start: "false",

@@ -32,21 +32,21 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? "#1a1022" : "#f6ffff")};
+  background: ${({ primary }) => (primary ? "#1a1022" : "#fffbfd")};
   margin-left: 0% !important;
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-  color: ${({ primary }) => (primary ? "#f6ffff": "#1a1022")};
+  color: ${({ primary }) => (primary ? "#fffbfd": "#1a1022")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
-  outline: solid 2px ${({ primary }) => (primary ? "#f6ffff": "#1a1022")};
+  outline: solid 2px ${({ primary }) => (primary ? "#fffbfd": "#1a1022")};
   border: none;
   cursor: pointer;
 
   &:hover {
     transition: all 0.3s ease-out;
     /* background: #fff; */
-    background: ${({ primary }) => (primary ?  "#f6ffff" : "#303333")};
-    color: ${({ primary }) => (primary ? "#303333" : "#f6ffff")};
+    background: ${({ primary }) => (primary ?  "#fffbfd" : "#303333")};
+    color: ${({ primary }) => (primary ? "#303333" : "#fffbfd")};
     outline: solid 1px #2cf4ff
   }
 

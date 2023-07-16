@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const FormSection = styled.div`
-  color: "#f6ffff";
+  color: "#fffbfd";
   padding-top: 120px;
   padding-bottom: 160px;
   height: 100vh;
-  background: ${({ lightBg }) => (lightBg ? "#f6ffff" : "#303333")};
+  background: ${({ lightBg }) => (lightBg ? "#fffbfd" : "#303333")};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +42,7 @@ export const TextArea = styled.textarea`
   border-radius: 8px;
   border: 3px solid #2cf4ff;
   margin-bottom: 25px;
+  background-color: #fffbfd;
 
   @media screen and (max-width: 480px) {
     width: 90vw;
@@ -58,7 +59,7 @@ export const InputFields = styled.div`
 `;
 
 export const ContactHeader = styled.h1`
-  color: #f6ffff;
+  color: #fffbfd;
   margin-bottom: 12px;
   font-size: 48px;
   line-height: 1.1;

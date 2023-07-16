@@ -17,7 +17,7 @@ export const InfoSec = styled.div`
   color: "#f6ffff";
   padding: 40px 0;
   height: 670px;
-  background: ${({ lightBg }) => (lightBg ? "#f6ffff" : "#303333")};
+  background: ${({ lightBg }) => (lightBg ? "#fffbfd" : "#303333")};
   display: flex;
   align-items: center;
 
@@ -88,7 +88,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#f6ffff" : "#1a1022")};
+  color: ${({ lightTopLine }) => (lightTopLine ? "#fffbfd" : "#1a1022")};
   /* background-color: black; */
   font-size: 18px;
   line-height: 16px;
@@ -109,7 +109,7 @@ export const Heading = styled.h1`
   margin-left: -2px;
   font-size: 48px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? "#f6ffff" : "#1a1022")};
+  color: ${({ lightText }) => (lightText ? "#fffbfd" : "#1a1022")};
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-decoration-color: #1a1022;
@@ -127,7 +127,7 @@ export const SubTitle = styled.p`
   margin-top: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#f6ffff" : "#1a1022")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#fffbfd" : "#1a1022")};
 
   @media screen and (max-width: 768px) {
     font-size: 28px;
@@ -155,7 +155,7 @@ export const Resume = styled.div`
 
   &:hover {
     transition: all 0.2s ease-out;
-    background: ${({ primary }) => (primary ? "#f6ffff" : "#82788b")};
+    background: ${({ primary }) => (primary ? "#fffbfd" : "#82788b")};
 
     border-color: #2cf4ff;
   }
