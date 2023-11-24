@@ -37,6 +37,17 @@ const Projects = ({
             <ProjectHeading>{headline}</ProjectHeading>
           </TextWrapper>
           <ProjectInfoRow>
+  <InfoColumn>
+    <Project>
+      <Anchor href="https://ontarioarteducationassociation.org">
+        <ProjectTitle>OAEA</ProjectTitle>
+        <ImageWrapper>
+          <Img src={img2} />
+        </ImageWrapper>
+      </Anchor>
+      <SubTitle>{description2}</SubTitle>
+    </Project>
+  </InfoColumn>
             <InfoColumn>
               <Project>
                 <Anchor href="https://studiopothos.com">
@@ -48,6 +59,8 @@ const Projects = ({
                 <SubTitle>{description3}</SubTitle>
               </Project>
             </InfoColumn>
+          </ProjectInfoRow>
+          <ProjectInfoRow>
             <InfoColumn>
               <Project>
                 <Anchor href="https://confectionsbymilon-backt.ca">
@@ -59,8 +72,6 @@ const Projects = ({
                 <SubTitle>{description4}</SubTitle>
               </Project>
             </InfoColumn>
-          </ProjectInfoRow>
-          <ProjectInfoRow>
             <InfoColumn>
               <Project>
                 <Anchor href="https://github.com/FortunateSmith/ToolSwap">
@@ -70,17 +81,6 @@ const Projects = ({
                   </ImageWrapper>
                 </Anchor>
                 <SubTitle>{description}</SubTitle>
-              </Project>
-            </InfoColumn>
-            <InfoColumn>
-              <Project>
-                <Anchor href="https://github.com/FortunateSmith/scheduler">
-                  <ProjectTitle>Scheduler</ProjectTitle>
-                  <ImageWrapper>
-                    <Img src={img2} />
-                  </ImageWrapper>
-                </Anchor>
-                <SubTitle>{description2}</SubTitle>
               </Project>
             </InfoColumn>
           </ProjectInfoRow>
