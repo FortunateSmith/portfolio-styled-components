@@ -37,7 +37,7 @@ const Projects = ({
             <ProjectHeading>{headline}</ProjectHeading>
           </TextWrapper>
           <ProjectInfoRow>
-            // project #1
+            {/* project #1 */}
             <InfoColumn>
               <Project>
                 <Anchor href="https://ontarioarteducationassociation.org">
@@ -49,7 +49,7 @@ const Projects = ({
                 <SubTitle>{description2}</SubTitle>
               </Project>
             </InfoColumn>
-            // project #2
+            {/* project #2 */}
             <InfoColumn>
               <Project>
                 <Anchor href="https://studiopothos.com">
@@ -63,7 +63,7 @@ const Projects = ({
             </InfoColumn>
           </ProjectInfoRow>
           <ProjectInfoRow>
-            // project #3
+            {/* project #3 */}
             <InfoColumn>
               <Project>
                 <Anchor href="https://confectionsbymilon-backt.ca">
@@ -75,7 +75,7 @@ const Projects = ({
                 <SubTitle>{description4}</SubTitle>
               </Project>
             </InfoColumn>
-            // project #4
+            {/* project #4 */}
             <InfoColumn>
               <Project>
                 <Anchor href="https://github.com/FortunateSmith/ToolSwap">
