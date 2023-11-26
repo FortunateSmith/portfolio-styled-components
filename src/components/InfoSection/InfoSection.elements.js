@@ -78,7 +78,7 @@ export const TextWrapper = styled.div`
   animation: ${fadeAnimation} 1s ease-in;
 
   @media screen and (max-width: 768px) {
-    height: 90vh;
+    height: 80vh;
     padding-bottom: 65px;
     padding-left: 0;
     padding-right: 0;
