@@ -7,7 +7,7 @@ const spinAnimation = keyframes`
     to {transform: rotate(360deg)} 
 `;
 
-const fadeAnimation = keyframes`
+export const fadeAnimation = keyframes`
   0% { opacity: 0 }
   /* 50% { opacity: 0.3 } */
   100% { opacity: 1 }

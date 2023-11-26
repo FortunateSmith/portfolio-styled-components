@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fadeAnimation } from "../InfoSection/InfoSection.elements";
 
 export const ProjectSection = styled.div`
   /* margin: 50px; */
@@ -48,6 +49,23 @@ export const Project = styled.div`
     padding-bottom: 20px;
 
   }
+`;
+
+export const ProjectWrapper = styled.div`
+max-width: 540px;
+padding: 60px 20px 20px 40px;
+animation: ${fadeAnimation} 1s ease-in;
+
+@media screen and (max-width: 768px) {
+  /* height: 80vh; */
+  padding-bottom: 65px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 `;
 
 export const ProjectDesc = styled.div`

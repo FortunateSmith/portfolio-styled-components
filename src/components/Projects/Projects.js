@@ -11,6 +11,7 @@ import {
 } from "../InfoSection/InfoSection.elements";
 import {
   ProjectSection,
+  ProjectWrapper,
   ProjectInfoRow,
   Project,
   ProjectTitle,
@@ -33,9 +34,9 @@ const Projects = ({
     <ProjectSection>
       <Container>
         <Fade>
-          <TextWrapper id={id}>
+          <ProjectWrapper id={id}>
             <ProjectHeading>{headline}</ProjectHeading>
-          </TextWrapper>
+          </ProjectWrapper>
           <ProjectInfoRow>
             {/* project #1 */}
             <InfoColumn>
