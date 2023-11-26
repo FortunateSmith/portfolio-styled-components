@@ -5,7 +5,6 @@ import {
   ImageWrapper,
   Img,
   InfoColumn,
-  TextWrapper,
   SubTitle,
   Anchor,
 } from "../InfoSection/InfoSection.elements";
