@@ -78,12 +78,14 @@ export const TextWrapper = styled.div`
   animation: ${fadeAnimation} 1s ease-in;
 
   @media screen and (max-width: 768px) {
+    height: 90vh;
     padding-bottom: 65px;
     padding-left: 0;
     padding-right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
   }
 `;
 
@@ -172,6 +174,10 @@ export const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${fadeAnimation} 1s ease-in;
+
+  @media screen and (max-width: 768px){
+    margin-top: 75px;
+  }
 `;
 
 export const Img = styled.img`
