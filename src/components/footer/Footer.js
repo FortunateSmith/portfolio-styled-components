@@ -7,13 +7,13 @@ const Footer = ({ bgColor, textColor, github, linkedIn }) => {
     <>
       <Foot bgColor={bgColor}>
         <FooterContainer textColor={textColor}>
-          <FooterIconBox textColor={textColor}>&copy; 2023</FooterIconBox>
+          <FooterIconBox alt="Copywrite Liam Smith 2023" textColor={textColor}>&copy; Liam Smith 2023</FooterIconBox>
           <ThumbnailWrapper>
             <Anchor href="https://www.linkedin.com/in/liam-smith-4389a726/">
-              <Thumbnail src={linkedIn} />
+              <Thumbnail alt="Linked In" src={linkedIn} />
             </Anchor>
             <Anchor href="https://github.com/FortunateSmith">
-              <Thumbnail src={github} />
+              <Thumbnail alt="Git Hub" src={github} />
             </Anchor>
           </ThumbnailWrapper>
         </FooterContainer>
