@@ -64,7 +64,7 @@ const Navbar = () => {
         <Nav className={navOpacity ? "active" : null} onScroll={opac}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              <NavIcon src={Logo} />
+              <NavIcon alt="Logo, scroll to top" src={Logo} />
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -74,6 +74,7 @@ const Navbar = () => {
                 <NavLinks
                   onClick={handleClick}
                   to="home"
+                  alt="home"
                   smooth={true}
                   duration={1000}
                   delay={100}
@@ -89,6 +90,7 @@ const Navbar = () => {
                 <NavLinks
                   onClick={handleClick}
                   to="about"
+                  alt="about"
                   smooth={true}
                   duration={1000}
                   delay={100}
@@ -103,6 +105,7 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   onClick={handleClick}
+                  alt="skills"
                   to="skills"
                   smooth={true}
                   duration={1000}
@@ -133,6 +136,7 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   onClick={handleClick}
+                  alt="projects"
                   to="projects"
                   smooth={true}
                   duration={1000}
@@ -148,6 +152,7 @@ const Navbar = () => {
                 {button ? (
                   <NavBtnLink
                     onClick={handleClick}
+                    alt="contact"
                     to="contact"
                     smooth={true}
                     duration={1000}
@@ -161,6 +166,7 @@ const Navbar = () => {
                 ) : (
                   <NavBtnLink
                     onClick={handleClick}
+                    alt="contact"
                     to="contact"
                     smooth={true}
                     duration={1000}
