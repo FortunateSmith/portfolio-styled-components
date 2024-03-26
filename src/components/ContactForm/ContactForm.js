@@ -42,6 +42,7 @@ const ContactForm = ({primary}) => {
         method="POST"
         target="_blank"
         id="contact"
+        netlify
         >
         <Fade>
         <InputFields>
