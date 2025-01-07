@@ -7,6 +7,7 @@ import {
   InfoColumn,
   SubTitle,
   Anchor,
+
 } from "../InfoSection/InfoSection.elements";
 import {
   ProjectSection,
@@ -15,6 +16,8 @@ import {
   Project,
   ProjectTitle,
   ProjectHeading,
+  SectionDescription,
+
 } from "./Projects.elements";
 
 const Projects = ({
@@ -22,12 +25,19 @@ const Projects = ({
   img2,
   img3,
   img4,
+  img5,
+  img6,
   headline,
   description,
   description2,
   description3,
   description4,
+  description5,
+  description6,
   id,
+  sectionDescription
+  // topLine,
+  // lightTopLine
 }) => {
   return (
     <ProjectSection>
@@ -35,7 +45,43 @@ const Projects = ({
         <Fade>
           <ProjectWrapper id={id}>
             <ProjectHeading>{headline}</ProjectHeading>
+            <SectionDescription>{sectionDescription}</SectionDescription>
           </ProjectWrapper>
+          
+
+
+          <ProjectInfoRow>
+          <InfoColumn>
+              <Project>
+                <Anchor href="https://oagee.org/">
+                  <ProjectTitle>OAGEE</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img6} />
+                  </ImageWrapper>
+                </Anchor>
+                <SubTitle>{description6}</SubTitle>
+              </Project>
+            </InfoColumn>
+            {/* project #1 */}
+            <InfoColumn>
+              <Project>
+                <Anchor href="https://amydhindsa.ca">
+                  <ProjectTitle>Amy Dhindsa</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img5} />
+                  </ImageWrapper>
+                </Anchor>
+                <SubTitle>{description5}</SubTitle>
+              </Project>
+            </InfoColumn>
+            {/* project #2 */}
+          </ProjectInfoRow>
+
+
+
+
+
+
           <ProjectInfoRow>
             {/* project #1 */}
             <InfoColumn>

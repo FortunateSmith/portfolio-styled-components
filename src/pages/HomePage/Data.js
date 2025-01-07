@@ -11,7 +11,7 @@ export const homeObjOne = {
   description:
     "I am a fullstack developer based in Toronto, Canada. I use design and data to help organizations connect with markets.",
   resumeLabel: "See my resume",
-  img: require("../../images/Headshot-Transparent-BG.png"),
+  img: require("../../images/Headshot-Transparent-BG-1.png"),
   start: "false",
   alt: "Image",
   viewButton: true,
@@ -30,7 +30,7 @@ export const homeObjTwo = {
   lightTextDesc: false,
   headline: "Skills",
   description:
-    "Languages, libraries, frameworks and databases include: JavaScript, HTML, CSS, React, SASS, SQL, NodeJS, Gatsby, Ajax, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, PostgreSQL and Git.",
+    "My experience includes languages, libraries, frameworks and databases include: JavaScript, HTML, CSS, React, SASS, SQL, NodeJS, WordPress, Gatsby, Ajax, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, Sanity.io, PostgreSQL and Git.",
   buttonLabel: "Contact",
   img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
   start: "",

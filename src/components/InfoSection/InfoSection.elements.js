@@ -16,7 +16,7 @@ export const fadeAnimation = keyframes`
 export const InfoSec = styled.div`
   color: "#f6ffff";
   padding: 40px 0;
-  height: 670px;
+  max-height: 670px;
   background: ${({ lightBg }) => (lightBg ? "#fffbfd" : "#303333")};
   display: flex;
   align-items: center;
@@ -24,6 +24,7 @@ export const InfoSec = styled.div`
   @media screen and (max-width: 1000px) {
     height: auto;
     padding: 2em 0;
+    max-height: 100%
   }
 
   @media screen and (max-width: 768px) {
@@ -182,9 +183,10 @@ export const ImageWrapper = styled.div`
 
 export const Img = styled.img`
   padding-right: 0;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   border: 0;
   max-width: 100%;
+  border-radius: 8px;
   vertical-align: middle;
   display: inline-block;
   /* max-height: 500px; */
