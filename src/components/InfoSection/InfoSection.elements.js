@@ -175,6 +175,7 @@ export const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${fadeAnimation} 1s ease-in;
+  margin-top: 30px;
 
   @media screen and (max-width: 768px){
     margin-top: 75px;
