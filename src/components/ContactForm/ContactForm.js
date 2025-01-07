@@ -15,7 +15,7 @@ import {
 } from "./ContactFormElements";
 
 const FORM_ENDPOINT =
-  "https://public.herotofu.com/v1/74235d60-969d-11ed-a003-6f0b76086b1c"; // TODO - fill on the later step
+  "https://formsubmit.co/a894edc2dc04a3e632352584951d4c25"; // TODO - fill on the later step
 
 const ContactForm = ({primary}) => {
   const [submitted, setSubmitted] = useState(false);
