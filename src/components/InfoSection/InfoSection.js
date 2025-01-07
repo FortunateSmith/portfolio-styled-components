@@ -72,7 +72,7 @@ const InfoSection = ({
                 {/* </Fade> */}
                 {viewButton ? (
                   <Slide left>
-                    <Anchor href="https://resume.creddle.io/resume/axbddmzuru6">
+                    <Anchor href="https://liam-smith-resume.tiiny.site">
                       <Resume primary={primary}>{resumeLabel}</Resume>
                     </Anchor>
                   </Slide>
