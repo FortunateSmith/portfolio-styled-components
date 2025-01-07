@@ -17,6 +17,7 @@ export const Nav = styled.nav`
   opacity: 1;
   transition: 0.5s;
   width: 100vw;
+  margin-bottom: 30px;
 `;
 
 export const NavbarContainer = styled(Container)`
