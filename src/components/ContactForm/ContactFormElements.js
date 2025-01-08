@@ -35,7 +35,7 @@ export const TextSubmit = styled.div`
 `;
 
 export const TextArea = styled.textarea`
-  padding: 1em;
+  padding: 6px;
   width: 100%;
   height: 296px;
   max-width: 372px;
@@ -43,6 +43,7 @@ export const TextArea = styled.textarea`
   border: 3px solid #2cf4ff;
   margin-bottom: 25px;
   background-color: #fffbfd;
+  font-size: 1rem;
 
   @media screen and (max-width: 480px) {
     width: 90vw;
@@ -74,6 +75,11 @@ export const Input = styled.input`
   border-radius: 4px;
   border: 2px solid #2cf4ff;
   margin: 5px;
+  height: 24px;
+  max-width: 372px;
+  width: 100%;
+  padding: 4px;
+  font-size:1rem;
 
   @media screen and (max-width: 480px) {
     width: 80vw;
@@ -82,8 +88,9 @@ export const Input = styled.input`
 `;
 
 export const PopUp = styled.div`
-  align-self: center;
-  color: #f6ffff;
+margin-left: auto;
+margin-right: auto;
+color: #f6ffff;
 
   @media screen and (max-width: 480px) {
     text-align: center;

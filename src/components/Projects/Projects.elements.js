@@ -23,6 +23,7 @@ export const SectionDescription = styled.p`
   margin-bottom: 35px;
   margin-top: 35px;
   font-size: 18px;
+  text-align: center;
   line-height: 24px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? "#fffbfd" : "#1a1022")};
 
@@ -67,6 +68,11 @@ export const Project = styled.div`
 export const ProjectWrapper = styled.div`
 	max-width: 540px;
 	padding: 20px;
+	/* display:flex; */
+	margin-left: auto;
+	margin-right: auto;
+	/* flex-direction: column;
+	justify-content: center; */
 	animation: ${fadeAnimation} 1s ease-in;
 
 	@media screen and (max-width: 768px) {
@@ -111,6 +117,7 @@ export const ProjectHeading = styled.h2`
 	margin-bottom: 24px;
 	padding-left: 15px;
 	font-size: 48px;
+	text-align: center;
 	line-height: 1.1;
 	color: ${({ lightText }) => (lightText ? "#fffbfd" : "#1a1022")};
 	text-decoration: underline #1a1022 1px;
@@ -124,22 +131,4 @@ export const ProjectHeading = styled.h2`
 		font-size: 64px;
 		/* padding-left: 9px; */
 	}
-`;
-
-export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#fffbfd" : "#1a1022")};
-  /* background-color: black; */
-  font-size: 18px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  margin-bottom: 16px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 32px;
-  }
-
-  @media screen and (max-width: 300px) {
-    font-size: 24px;
-  }
 `;
