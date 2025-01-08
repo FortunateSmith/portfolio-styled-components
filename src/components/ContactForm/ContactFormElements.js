@@ -88,6 +88,7 @@ export const Input = styled.input`
 `;
 
 export const PopUp = styled.div`
+width: 200px;
 margin-left: auto;
 margin-right: auto;
 color: #f6ffff;
