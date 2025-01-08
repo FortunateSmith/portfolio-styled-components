@@ -62,7 +62,7 @@ const ContactForm = ({ primary }) => {
 							Send
 						</Button>
 					</TextSubmit>
-					{/* {submitted ? (
+					{submitted ? (
 						<PopUp className="text-2xl">Thank you!</PopUp>
 					) : (
 						<PopUp />
@@ -71,7 +71,7 @@ const ContactForm = ({ primary }) => {
 						<PopUp className="text-2xl">I will be in touch soon.</PopUp>
 					) : (
 						<PopUp />
-					)} */}
+					)}
 				</Fade>
 			</Form>
 		</FormSection>

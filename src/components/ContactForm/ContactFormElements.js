@@ -4,7 +4,7 @@ export const FormSection = styled.div`
   color: "#fffbfd";
   padding-top: 120px;
   padding-bottom: 160px;
-  height: 100vh;
+  /* height: 100vh; */
   background: ${({ lightBg }) => (lightBg ? "#fffbfd" : "#303333")};
   display: flex;
   align-items: center;
