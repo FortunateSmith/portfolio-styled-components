@@ -30,7 +30,7 @@ export const homeObjTwo = {
   lightTextDesc: false,
   headline: "Skills",
   description:
-    "My experience includes languages, libraries, frameworks and databases include: JavaScript, HTML, CSS, React, SASS, SQL, NodeJS, WordPress, Gatsby, Ajax, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, Sanity.io, PostgreSQL and Git.",
+    "I spend a lot of my time in the WordPress ecosystem and have built many sites on the platorm. Though my training is largely in JavaScript and related technologies, I have acquired an understanding of PHP through my development experience. My other bases of knowledge include languages, libraries, frameworks and databases: HTML, CSS, React, SASS, SQL, NodeJS, Gatsby, Ajax, Express, EJS, jQuery, Axios, Sanity.io, PostgreSQL and Git.",
   buttonLabel: "Contact",
   img: require("../../images/undraw_social_thinking_re_y8cc.svg").default,
   start: "",
