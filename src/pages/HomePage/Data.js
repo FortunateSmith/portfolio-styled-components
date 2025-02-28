@@ -9,7 +9,7 @@ export const homeObjOne = {
   lightTextDesc: false,
   headline: "Liam Smith",
   description:
-    "I am a Web Developer based in Toronto. I can help you bring websites and applications from ideas to reality.",
+    "I am a Web Developer based in Toronto with experience helping businesses, non-profits and individuals increase their web presence.",
   resumeLabel: "See my resume",
   img: require("../../images/Headshot-Transparent-BG-1.png"),
   start: "false",
@@ -58,7 +58,7 @@ export const homeObjFour = {
   lightTextDesc: false,
   headline: "About Me",
   description:
-    "I am a developer, musician, nature enthusiast and humanist with a broad range of interests. I aim to merge arts, development and community, strengthening real world networks and contributing to positive social change. I believe that technology must improve the lives of average people and be used to flatten society.",
+    "As a developer and designer, I have created everything from single page sites to large, organizational web portals. I have a unique eye for design, a keen curiosity that drives me to understand problems and find solutions.",
   buttonLabel: "",
   img: require("../../images/Fairy-Lake.jpeg"),
   start: "",
