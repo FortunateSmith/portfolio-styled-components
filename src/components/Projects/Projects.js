@@ -27,6 +27,7 @@ const Projects = ({
   img4,
   img5,
   img6,
+  img7,
   headline,
   description,
   description2,
@@ -34,6 +35,8 @@ const Projects = ({
   description4,
   description5,
   description6,
+  description7,
+
   id,
   sectionDescription
   // topLine,
@@ -83,7 +86,7 @@ const Projects = ({
 
 
           <ProjectInfoRow>
-            {/* project #1 */}
+            {/* project #3 */}
             <InfoColumn>
               <Project>
                 <Anchor href="https://ontarioarteducationassociation.org">
@@ -95,7 +98,7 @@ const Projects = ({
                 <SubTitle>{description2}</SubTitle>
               </Project>
             </InfoColumn>
-            {/* project #2 */}
+            {/* project #4 */}
             <InfoColumn>
               <Project>
                 <Anchor href="https://studiopothos.com">
@@ -109,7 +112,7 @@ const Projects = ({
             </InfoColumn>
           </ProjectInfoRow>
           <ProjectInfoRow>
-            {/* project #3 */}
+            {/* project #5 */}
             <InfoColumn>
               <Project>
                 <Anchor href="https://confectionsbymilon-backt.ca">
@@ -121,7 +124,7 @@ const Projects = ({
                 <SubTitle>{description4}</SubTitle>
               </Project>
             </InfoColumn>
-            {/* project #4 */}
+            {/* project #6 */}
             <InfoColumn>
               <Project>
                 <Anchor href="https://github.com/FortunateSmith/ToolSwap">
@@ -133,6 +136,34 @@ const Projects = ({
                 <SubTitle>{description}</SubTitle>
               </Project>
             </InfoColumn>
+          </ProjectInfoRow>
+
+
+          <ProjectInfoRow>
+            {/* project #7 */}
+            <InfoColumn>
+              <Project>
+                <Anchor href="https://communicationandbeyond.ca">
+                  <ProjectTitle>Communication and Beyond</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img7} />
+                  </ImageWrapper>
+                </Anchor>
+                <SubTitle>{description7}</SubTitle>
+              </Project>
+            </InfoColumn>
+            {/* project #6
+            <InfoColumn>
+              <Project>
+                <Anchor href="https://github.com/FortunateSmith/ToolSwap">
+                  <ProjectTitle>Tool Swap</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img} />
+                  </ImageWrapper>
+                </Anchor>
+                <SubTitle>{description}</SubTitle>
+              </Project>
+            </InfoColumn> */}
           </ProjectInfoRow>
         </Fade>
       </Container>
