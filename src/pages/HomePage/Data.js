@@ -9,7 +9,7 @@ export const homeObjOne = {
   lightTextDesc: false,
   headline: "Liam Smith",
   description:
-    "I am a Web Developer based in Toronto with experience helping businesses, non-profits and individuals increase their web presence.",
+    "I am a Web Designer and Developer based in Toronto with experience helping businesses, non-profits and individuals create unique and responsive designs that speak to the nature of the business and clientele.",
   resumeLabel: "See my resume",
   img: require("../../images/Headshot-Transparent-BG-1.png"),
   start: "false",
