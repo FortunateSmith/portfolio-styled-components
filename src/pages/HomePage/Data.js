@@ -11,7 +11,7 @@ export const homeObjOne = {
   description:
     "I am a Web Designer and Developer based in Toronto with experience helping businesses, non-profits and individuals create unique and responsive designs that speak to the nature of the business and clientele.",
   resumeLabel: "See my resume",
-  img: require("../../images/Headshot-Transparent-BG-1.png"),
+  img: require("../../images/Against-Blue-Siding.jpeg"),
   start: "false",
   alt: "Image",
   viewButton: true,
@@ -60,7 +60,7 @@ export const homeObjFour = {
   description:
     "As a developer and designer with a background in the arts, I have created everything from single page sites to large, organizational web portals. I have a unique eye for design, a keen curiosity that drives me to understand problems and find solutions.",
   buttonLabel: "",
-  img: require("../../images/Fairy-Lake.jpeg"),
+  img: require("../../images/Fairy-Lake-bw.jpeg"),
   start: "",
   alt: "Image",
   viewButton: false,

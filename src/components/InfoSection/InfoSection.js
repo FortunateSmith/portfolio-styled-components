@@ -70,13 +70,13 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
                 {/* </Fade> */}
-                {viewButton ? (
+                {/* {viewButton ? (
                   <Slide left>
                     <Anchor href="https://liam-smith-resume.tiiny.site">
                       <Resume primary={primary}>{resumeLabel}</Resume>
                     </Anchor>
                   </Slide>
-                ) : null}
+                ) : null} */}
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>

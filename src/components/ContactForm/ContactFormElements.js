@@ -92,6 +92,7 @@ width: 200px;
 margin-left: auto;
 margin-right: auto;
 color: #f6ffff;
+text-align: center;
 
   @media screen and (max-width: 480px) {
     text-align: center;
