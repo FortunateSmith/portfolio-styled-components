@@ -222,9 +222,10 @@ export const CircleWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    width: 201px;
-    height: 201px;
+    width: 301px;
+    height: 301px;
     padding-left: 60px;
+    padding-bottom: 30px;
     margin-right: 5em;
     justify-content: center;
   }
