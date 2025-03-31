@@ -224,15 +224,17 @@ export const CircleWrapper = styled.div`
   @media screen and (max-width: 768px) {
     width: 301px;
     height: 301px;
-    padding-left: 60px;
-    padding-bottom: 30px;
-    margin-right: 5em;
+    /* padding-left: 60px; */
+
+    padding-bottom: 60px;
+    /* margin-right: 5em; */
     justify-content: center;
   }
 
   @media screen and (max-width: 480px) {
     /* width: 151px;
     height: 151px; */
+    padding-top: 25px;
     padding-left: 25px;
     margin: 0 auto;
     justify-content: center;
@@ -254,7 +256,7 @@ export const Deg0 = styled.img`
   }
 
   @media screen and (max-width: 768px) {
-    transform: translate(101px);
+    /* transform: translate(101px); */
     width: 60px;
     height: 60px;
   }
@@ -281,7 +283,7 @@ export const Deg60 = styled.img`
   }
 
   @media screen and (max-width: 768px) {
-    transform: rotate(61deg) translate(101px) rotate(-61deg);
+    /* transform: rotate(61deg) translate(101px) rotate(-61deg); */
     width: 60px;
     height: 60px;
   }
@@ -308,7 +310,7 @@ export const Deg120 = styled.img`
   }
 
   @media screen and (max-width: 768px) {
-    transform: rotate(121deg) translate(101px) rotate(-121deg);
+    /* transform: rotate(121deg) translate(101px) rotate(-121deg); */
     width: 60px;
     height: 60px;
   }
@@ -334,7 +336,7 @@ export const Deg180 = styled.img`
   }
 
   @media screen and (max-width: 768px) {
-    transform: rotate(181deg) translate(101px) rotate(-181deg);
+    /* transform: rotate(181deg) translate(101px) rotate(-181deg); */
     width: 60px;
     height: 60px;
   }
@@ -360,7 +362,7 @@ export const Deg240 = styled.img`
   }
 
   @media screen and (max-width: 768px) {
-    transform: rotate(241deg) translate(101px) rotate(-241deg);
+    /* transform: rotate(241deg) translate(101px) rotate(-241deg); */
     width: 60px;
     height: 60px;
   }
@@ -387,7 +389,7 @@ export const Deg300 = styled.img`
   }
 
   @media screen and (max-width: 768px) {
-    transform: rotate(301deg) translate(101px) rotate(-301deg);
+    /* transform: rotate(301deg) translate(101px) rotate(-301deg); */
     width: 60px;
     height: 60px;
   }
