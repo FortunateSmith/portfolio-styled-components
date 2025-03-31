@@ -18,8 +18,8 @@ const Home = () => {
       <Navbar/>
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjFour} />
-      <InfoSection {...homeObjTwo} />
       <Projects  {...homeObjFive}/>
+      <InfoSection {...homeObjTwo} />
       <ContactForm {...contactObj}/>
       <Footer {...footerObj}/>
     </>

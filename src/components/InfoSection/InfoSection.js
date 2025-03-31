@@ -2,8 +2,8 @@ import React from "react";
 import { Container } from "../../globalStyles";
 // import { Link } from "react-router-dom";
 // import ReactImg from "../../images/techLogos/React.png"
-import { Slide, Roll, Fade } from "react-reveal";
-
+import {  Roll, Fade } from "react-reveal";
+// Slide,
 import {
   InfoSec,
   InfoColumn,
@@ -12,10 +12,10 @@ import {
   TopLine,
   Heading,
   SubTitle,
-  Resume,
+  // Resume,
   ImageWrapper,
   Img,
-  Anchor,
+  // Anchor,
   CircleWrapper,
   Deg0,
   Deg60,
