@@ -76,7 +76,7 @@ export const InfoColumn = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding: 60px 20px 20px 40px;
-  animation: ${fadeAnimation} 1s ease-in;
+  animation: ${fadeAnimation} 2s ease-in;
 
   @media screen and (max-width: 768px) {
     height: 80%;
@@ -174,7 +174,7 @@ export const ImageWrapper = styled.div`
   /* justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")}; */
   justify-content: center;
   align-items: center;
-  animation: ${fadeAnimation} 1s ease-in;
+  animation: ${fadeAnimation} 2s ease-in;
   margin-top: 30px;
 
   @media screen and (max-width: 768px){
@@ -213,7 +213,7 @@ export const CircleWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding-right: 80px;
-  animation: ${spinAnimation} 1200ms ease-in-out, ${fadeAnimation} 1s ease-in;
+  animation: ${spinAnimation} 1200ms ease-in-out, ${fadeAnimation} 2s ease-in;
 
   @media screen and (max-width: 991px) {
     width: 251px;

@@ -58,6 +58,7 @@ const InfoSection = ({
     <>
       <InfoSec lightBg={lightBg}>
         <Container>
+              <Fade>
           <InfoRow imgStart={imgStart}>
             <InfoColumn stationary={stationary} justify={justify}>
               <TextWrapper
@@ -65,18 +66,16 @@ const InfoSection = ({
                 lightBorder={lightBorder}
                 borderShadow={borderShadow}
               >
-                {/* <Fade> */}
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
-                {/* </Fade> */}
                 {/* {viewButton ? (
                   <Slide left>
-                    <Anchor href="https://liam-smith-resume.tiiny.site">
-                      <Resume primary={primary}>{resumeLabel}</Resume>
-                    </Anchor>
+                  <Anchor href="https://liam-smith-resume.tiiny.site">
+                  <Resume primary={primary}>{resumeLabel}</Resume>
+                  </Anchor>
                   </Slide>
-                ) : null} */}
+                  ) : null} */}
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
@@ -104,6 +103,7 @@ const InfoSection = ({
               )}
             </InfoColumn>
           </InfoRow>
+              </Fade>
         </Container>
       </InfoSec>
     </>
