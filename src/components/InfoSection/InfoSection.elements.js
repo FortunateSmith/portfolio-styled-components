@@ -9,7 +9,7 @@ const spinAnimation = keyframes`
 
 export const fadeAnimation = keyframes`
   0% { opacity: 0 }
-  /* 50% { opacity: 0.3 } */
+  50% { opacity: 0 }
   100% { opacity: 1 }
 `
 
@@ -174,7 +174,7 @@ export const ImageWrapper = styled.div`
   /* justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")}; */
   justify-content: center;
   align-items: center;
-  animation: ${fadeAnimation} 2s ease-in;
+  animation: ${fadeAnimation} 3s ease-in;
   margin-top: 30px;
 
   @media screen and (max-width: 768px){
