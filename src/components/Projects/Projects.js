@@ -28,6 +28,8 @@ const Projects = ({
   img5,
   img6,
   img7,
+  img8,
+  img9,
   headline,
   description,
   description2,
@@ -36,7 +38,8 @@ const Projects = ({
   description5,
   description6,
   description7,
-
+  description8,
+  description9,
   id,
   sectionDescription
   // topLine,
@@ -50,11 +53,10 @@ const Projects = ({
             <ProjectHeading>{headline}</ProjectHeading>
             <SectionDescription>{sectionDescription}</SectionDescription>
           </ProjectWrapper>
-          
-
-
+{/* Break */}
           <ProjectInfoRow>
           <InfoColumn>
+            {/* project #1 */}
               <Project>
                 <Anchor href="https://oagee.org/">
                   <ProjectTitle>OAGEE</ProjectTitle>
@@ -65,8 +67,8 @@ const Projects = ({
                 <SubTitle>{description6}</SubTitle>
               </Project>
             </InfoColumn>
-            {/* project #1 */}
             <InfoColumn>
+            {/* project #2 */}
               <Project>
                 <Anchor href="https://amydhindsa.ca">
                   <ProjectTitle>Amy Dhindsa</ProjectTitle>
@@ -77,14 +79,8 @@ const Projects = ({
                 <SubTitle>{description5}</SubTitle>
               </Project>
             </InfoColumn>
-            {/* project #2 */}
           </ProjectInfoRow>
-
-
-
-
-
-
+{/* Break */}
           <ProjectInfoRow>
             {/* project #3 */}
             <InfoColumn>
@@ -111,6 +107,7 @@ const Projects = ({
               </Project>
             </InfoColumn>
           </ProjectInfoRow>
+          {/* Break */}
           <ProjectInfoRow>
             {/* project #5 */}
             <InfoColumn>
@@ -127,18 +124,18 @@ const Projects = ({
             {/* project #6 */}
             <InfoColumn>
               <Project>
-                <Anchor href="https://github.com/FortunateSmith/ToolSwap">
-                  <ProjectTitle>Tool Swap</ProjectTitle>
+                <Anchor href="http://idioteque.ca">
+                  <ProjectTitle>Idioteque</ProjectTitle>
                   <ImageWrapper>
-                    <Img src={img} />
+                    <Img src={img8} />
                   </ImageWrapper>
                 </Anchor>
-                <SubTitle>{description}</SubTitle>
+                <SubTitle>{description8}</SubTitle>
               </Project>
             </InfoColumn>
           </ProjectInfoRow>
 
-
+{/* Break */}
           <ProjectInfoRow>
             {/* project #7 */}
             <InfoColumn>
@@ -152,7 +149,7 @@ const Projects = ({
                 <SubTitle>{description7}</SubTitle>
               </Project>
             </InfoColumn>
-            {/* project #6
+            {/* project #8 */}
             <InfoColumn>
               <Project>
                 <Anchor href="https://github.com/FortunateSmith/ToolSwap">
@@ -163,11 +160,39 @@ const Projects = ({
                 </Anchor>
                 <SubTitle>{description}</SubTitle>
               </Project>
-            </InfoColumn> */}
+            </InfoColumn> 
+          </ProjectInfoRow>
+          {/* Break */}
+          <ProjectInfoRow>
+            {/* project #9 */}
+            <InfoColumn>
+              <Project>
+                <Anchor href="https://gillianmoranz.com">
+                  <ProjectTitle>Gillian Moranz</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img9} />
+                  </ImageWrapper>
+                </Anchor>
+                <SubTitle>{description9}</SubTitle>
+              </Project>
+            </InfoColumn>
+            {/* project #8 */}
+            {/* <InfoColumn>
+              <Project>
+                <Anchor href="https://github.com/FortunateSmith/ToolSwap">
+                  <ProjectTitle>Tool Swap</ProjectTitle>
+                  <ImageWrapper>
+                    <Img src={img} />
+                  </ImageWrapper>
+                </Anchor>
+                <SubTitle>{description}</SubTitle>
+              </Project>
+            </InfoColumn>  */}
           </ProjectInfoRow>
         </Fade>
       </Container>
     </ProjectSection>
+    
   );
 };
 
