@@ -114,7 +114,7 @@ export const ProjectTitle = styled.p`
 `;
 
 export const ProjectHeading = styled.h2`
-	/* margin-bottom: 24px; */
+	margin-bottom: 24px;
 	padding-left: 15px;
 	font-size: 48px;
 	text-align: center;
