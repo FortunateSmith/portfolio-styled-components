@@ -95,7 +95,7 @@ export const ProjectTitle = styled.p`
 	width: 100%;
 	/* inline-size: min-content;  */
 	white-space: nowrap;
-	margin-bottom: 35px;
+	/* margin-bottom: 35px; */
 	font-size: 32px;
 	line-height: 32px;
 	color: ${({ lightTextDesc }) => (lightTextDesc ? "#fffbfd" : "#1a1022")};
@@ -114,7 +114,7 @@ export const ProjectTitle = styled.p`
 `;
 
 export const ProjectHeading = styled.h2`
-	margin-bottom: 24px;
+	/* margin-bottom: 24px; */
 	padding-left: 15px;
 	font-size: 48px;
 	text-align: center;
