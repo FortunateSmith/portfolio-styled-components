@@ -188,6 +188,7 @@ export const Img = styled.img`
   border: 0;
   max-width: 100%;
   border-radius: 8px;
+  border: 4px double black;
   vertical-align: middle;
   display: inline-block;
   /* max-height: 500px; */
