@@ -19,8 +19,8 @@ export const ProjectSection = styled.div`
 export const SectionDescription = styled.p`
   width: 100%;
   padding-left: 15px;
-  margin-bottom: 35px;
-  margin-top: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   font-size: 18px;
   text-align: center;
   line-height: 24px;
@@ -66,7 +66,7 @@ export const Project = styled.div`
 
 export const ProjectWrapper = styled.div`
 	max-width: 540px;
-	padding: 20px;
+	padding: 20px 20px 0 20px;
 	/* display:flex; */
 	margin-left: auto;
 	margin-right: auto;
