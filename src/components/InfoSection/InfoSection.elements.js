@@ -15,7 +15,7 @@ export const fadeAnimation = keyframes`
 
 export const InfoSec = styled.div`
   color: "#f6ffff";
-  /* padding: 40px 0; */
+  padding: 40px 0;
   max-height: 670px;
   background: ${({ lightBg }) => (lightBg ? "#fffbfd" : "#303333")};
   display: flex;
