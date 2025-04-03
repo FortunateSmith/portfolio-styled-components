@@ -3,13 +3,12 @@ import { fadeAnimation } from "../InfoSection/InfoSection.elements";
 
 export const ProjectSection = styled.div`
 	/* margin: 50px; */
-	padding: 40px 0;
+	padding-top: 40px;
 	background: #fffbfd;
 	display: flex;
 	align-items: center;
-	/* max-height: 670px; */
 
-	@media screen {
+	@media screen and (max-width: 768px){
 		display: flex;
 		align-items: center;
 		padding: none;
