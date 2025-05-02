@@ -89,6 +89,21 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   onClick={handleClick}
+                  alt="projects"
+                  to="projects"
+                  smooth={true}
+                  duration={1000}
+                  delay={100}
+                  spy={true}
+                  exact="true"
+                  offset={-240}
+                >
+                  Projects
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  onClick={handleClick}
                   to="about"
                   alt="about"
                   smooth={true}
@@ -133,21 +148,6 @@ const Navbar = () => {
                 </NavLinks>
               </NavItem> */}
 
-              <NavItem>
-                <NavLinks
-                  onClick={handleClick}
-                  alt="projects"
-                  to="projects"
-                  smooth={true}
-                  duration={1000}
-                  delay={100}
-                  spy={true}
-                  exact="true"
-                  offset={-240}
-                >
-                  Projects
-                </NavLinks>
-              </NavItem>
               <NavItemBtn>
                 {button ? (
                   <NavBtnLink
